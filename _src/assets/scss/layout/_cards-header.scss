@@ -1,11 +1,12 @@
 .header {
-  border: 1px solid red;
-  height: 111px;
   position: fixed;
   top: 0;
+  width: 32rem;
+  height: 11.1rem;
 
   &__logo {
-    width: 50px;
-    height: 201px;
+    height: 5rem;
+    width: 2rem;
+    padding: 4rem;
   }
 }
