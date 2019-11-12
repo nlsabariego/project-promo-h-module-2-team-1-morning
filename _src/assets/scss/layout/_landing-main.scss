@@ -19,12 +19,53 @@
   align-items: center;
   padding-top: 3.54rem;
   padding-bottom: 1.78rem;
+
+  &__title {
+    // font-family
+    color: $colorOrange;
+    font-size: 1.92rem;
+    font-weight: 900;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+  }
+  &__text {
+    width: 26.48rem;
+    font-family: $fontFamilyText;
+    color: $colorDarkGreenBlue;
+    font-size: 1.28rem;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+  }
 }
 .landing__menu__list{
-  border: solid 2px green;
+  border: solid 0.16rem $colorOrange;
+  // opacity: 0.21;
+  border-radius: 0.4rem;
+  width: 26.8rem;
   display: flex;
+  justify-content: space-between;
   text-align: center;
+  padding: 1.5rem 2rem 1rem 2rem;
 
+  &--design,
+  &--fill,
+  &--share {
+    text-align: center;
+    width: 6rem;
+  }
+
+}
+.far,
+.fas {
+  color: $colorOrange;
+  width: 6rem;
+  
 }
 .landing__button {
   border: red solid 2px;
