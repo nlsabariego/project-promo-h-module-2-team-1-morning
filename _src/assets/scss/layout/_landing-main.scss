@@ -1,0 +1,33 @@
+.landing__container {
+  border: solid 2px blue;
+  height: 100vh;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 9.5rem 3.5rem 3rem 3.5rem;
+}
+.landing__image {
+  width: 25rem;
+  height: 6.3rem;
+}
+.landing__main-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 3.54rem;
+  padding-bottom: 1.78rem;
+}
+.landing__menu__list{
+  border: solid 2px green;
+  display: flex;
+  text-align: center;
+
+}
+.landing__button {
+  border: red solid 2px;
+  padding: 3.86rem 10.1rem 3rem 9rem;
+
+}
