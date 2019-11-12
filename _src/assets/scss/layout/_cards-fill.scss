@@ -1,14 +1,22 @@
 .form-fill {
-  color: red;
-  display: block;
-  margin: 0 auto;
   width: 100%;
 
-  &__group {
-    display: block;
+  &__group--title {
+    display: flex;
+    flex-direction: row;
   }
 
   &__title {
     @include CardTitle;
+    padding: 1rem 1.6rem 1rem 3.1rem;
+    width: 100%;
+  }
+  &__group--input {
+  }
+
+  &__input {
+    display: block;
+  }
+  &__label {
   }
 }
