@@ -1,9 +1,23 @@
+.cards__form {
+  margin: 0 2rem;
+}
+
 .form-fill {
   width: 100%;
 
   &__group--title {
     display: flex;
     flex-direction: row;
+    align-items: center;
+  }
+  .icons-2:before {
+    content: "\f11c";
+    left: 0;
+    font-weight: 400;
+    font-family: "Font Awesome 5 Pro";
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    color: $colorOrange;
   }
 
   &__title {
@@ -11,17 +25,20 @@
     padding: 1rem 1.6rem 1rem 3.1rem;
     width: 100%;
   }
+
   &__group--input {
   }
 
-  &__input {
-    display: block;
-  }
   &__label {
     @include CardText;
+    margin: 0.8rem 0;
+    display: block;
   }
 
   &__input {
     @include CardInput;
+    height: 3rem;
+    width: 100%;
+    display: block;
   }
 }
