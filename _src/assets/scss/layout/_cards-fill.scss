@@ -4,6 +4,7 @@
   &__group--title {
     display: flex;
     flex-direction: row;
+    align-items: center;
   }
 
   &__title {
@@ -11,17 +12,22 @@
     padding: 1rem 1.6rem 1rem 3.1rem;
     width: 100%;
   }
+
+  .icons-2:before {
+    content: "\f11c";
+  }
+
   &__group--input {
   }
 
-  &__input {
-    display: block;
-  }
   &__label {
     @include CardText;
   }
 
   &__input {
+    height: 3rem;
+    width: 28.1rem;
+    display: block;
     @include CardInput;
   }
 }
