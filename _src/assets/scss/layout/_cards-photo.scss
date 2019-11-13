@@ -10,44 +10,65 @@
 }
 
 .button_reset {
-  width: 75px;
+  width: 76px;
   height: 30px;
   border-radius: 15px;
-  border: solid 1px #ffffff;
+  border: solid 1px $colorWhite;
   display: flex;
+  font-size: 12px;
 }
-
+.far {
+  .fa {
+    color: $colorDarkGrey;
+  }
+}
 .section1_card {
   width: 240px;
   min-height: 330px;
   margin-top: 20px;
 }
 
-.section1_card_name {
-  display: block;
+.section1_card_info {
+  /* border: 3px solid blue;*/
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
   //////////////revisar///////
-  border-left: 5px solid #438792;
+  /*border-left: 5px solid $colorBlue;*/
   /////revisar////
   name {
-    font-family: "Montserrat", sans-serif;
-    font-size: 18px;
+    font-family: $fontFamilyPhoto;
+    font-size: $fontSiePhotoTitle;
   }
   job {
-    font-family: "Montserrat", sans-serif;
-    font-size: 16px;
+    font-family: $fontFamilyPhoto;
+    font-size: $fontSizePhotoText;
   }
 }
+
 .section1_image {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: 240px;
+  height: 200px;
   position: relative;
   display: block;
 }
-/*
 .section1_links {
+  border: 3px red solid;
+  display: flex;
+  justify-content: flex-start;
+  /*padding: 10px 20px 12px;
+  margin: 0;*/
+  min-height: 58px;
+  box-sizing: border-box;
 }
-/*
-.section1_element{}
-*/
+
+.section1_element {
+  width: 32px;
+  height: 32px;
+  border-radius: 16px;
+  margin: 10px;
+  border: solid 2px green;
+}
