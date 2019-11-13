@@ -2,6 +2,44 @@
   border: solid red 5px;
 }
 
-.design__header {
-  border: solid blue 2px;
+.design {
+  &__header {
+    border: solid blue 2px;
+  }
+
+  &__form {
+    border: solid green 2px;
+  }
+}
+
+.form__palette {
+  border: solid #fabada 2px;
+
+  display: flex;
+  flex-direction: row;
+}
+
+.palette-color {
+  border: solid 2px;
+  display: flex;
+  flex-direction: row;
+  align-content: space-between;
+
+  width: 9rem;
+  height: 2.5rem;
+
+  &__1 {
+    width: 3rem;
+    background: $colorDarkGreenBlue;
+  }
+
+  &__2 {
+    width: 3rem;
+    background: $colorBlue;
+  }
+
+  &__3 {
+    width: 3rem;
+    background: $colorGreen;
+  }
 }
