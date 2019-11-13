@@ -1,0 +1,27 @@
+.section1-container {
+  height: 457px;
+  background-image: linear-gradient(to bottom, var(--silver), var(--pale-grey));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid blue;
+}
+
+.button_reset {
+  width: 75px;
+  height: 30px;
+  border-radius: 15px;
+  border: solid 1px #ffffff;
+}
+/*
+.section1_card{
+
+
+}
+.section1_card_name{}
+/*(.section1_card_name name
+.section1_card_name job)*/
+/*.section1_image{}
+.section1_links{}
+.section1_element{}
+*/
