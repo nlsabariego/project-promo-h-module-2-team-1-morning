@@ -1,7 +1,7 @@
 .landing__container {
+  background: $colorLightGrey;
   border: solid 2px blue;
-  height: 100vh;
-  width: auto;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -21,10 +21,11 @@
   padding-bottom: 1.78rem;
 
   &__title {
-    // font-family
+    font-family: $fontFamilyLandingTitle;
+    width: 22.3rem;
     color: $colorOrange;
     font-size: 1.92rem;
-    font-weight: 900;
+    font-weight: $fontWeightLandingTitle;
     font-stretch: normal;
     font-style: normal;
     line-height: normal;
@@ -37,17 +38,18 @@
     font-size: 1.28rem;
     font-weight: normal;
     font-stretch: normal;
-    font-style: normal;
+    font-style:normal;
     line-height: normal;
     letter-spacing: normal;
     text-align: center;
   }
 }
 .landing__menu__list{
-  border: solid 0.16rem $colorOrange;
-  // opacity: 0.21;
+  border: solid 0.16rem rgba(225, 115, 52, 0.21);
   border-radius: 0.4rem;
   width: 26.8rem;
+  font-family: $fontFamilyText;
+  font-size: 1.28rem;
   display: flex;
   justify-content: space-between;
   text-align: center;
@@ -58,17 +60,33 @@
   &--share {
     text-align: center;
     width: 6rem;
+    color: $colorDarkGrey;
   }
 
 }
 .far,
 .fas {
+  opacity: 1;
   color: $colorOrange;
-  width: 6rem;
+  font-size: 2.24rem;
   
 }
+
+
 .landing__button {
-  border: red solid 2px;
-  padding: 3.86rem 10.1rem 3rem 9rem;
+  background: $colorBlue;
+  color: $colorWhite;
+  width: 12.9rem;
+  height: 4.2rem;
+  border-radius: 2.1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: $fontFamilyTitle;
+  font-size: 1.6rem;
+  font-weight: 600;
+  text-transform: $textTransformTitle;
+  margin: 3.86rem 10.1rem 3rem 9rem;
 
 }

@@ -1,6 +1,7 @@
 // color
 
 $colorBlack: #000000;
+$colorLightGrey: #f5f5f5;
 $colorGrey: #6b6b6b;
 $colorDarkGrey: #54585a;
 $colorDarkGreenBlue: #114e4e;
@@ -8,13 +9,14 @@ $colorBlue: #438792;
 $colorGreen: #a2deaf;
 $colorKhaki: #f9f4dc;
 $colorWhite: #ffffff;
-$colorOrange: #e17334;
+$colorOrange: rgb(225, 115, 52);
 
 // fonts
 
 $fontFamilyTitle: "Open Sans";
 $fontFamilyText: "Open Sans";
 $fontFamilyPhoto: "Montserrat", sans-serif;
+$fontFamilyLandingTitle: "Merriweather";
 
 $fontSizeLandingTitle: 1.92rem;
 $fontSizeLandingText: 1.28rem;
