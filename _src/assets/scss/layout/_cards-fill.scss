@@ -18,5 +18,10 @@
     display: block;
   }
   &__label {
+    @include CardText;
+  }
+
+  &__input {
+    @include CardInput;
   }
 }
