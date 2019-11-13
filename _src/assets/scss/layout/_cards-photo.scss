@@ -1,13 +1,11 @@
 .section1 {
   height: 457px;
-  /*background-image: linear-gradient(to bottom, var(--silver), var(--pale-grey));*/
+  background-image: linear-gradient(#bfcdd0, #dde9ed);
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 3px solid blue;
 }
 .section1-container {
-  border: 3px solid red;
   display: block;
 }
 
@@ -16,20 +14,40 @@
   height: 30px;
   border-radius: 15px;
   border: solid 1px #ffffff;
+  display: flex;
 }
 
 .section1_card {
-  border: 3px green solid;
   width: 240px;
   min-height: 330px;
   margin-top: 20px;
 }
-/*
+
 .section1_card_name {
+  display: block;
+  //////////////revisar///////
+  border-left: 5px solid #438792;
+  /////revisar////
+  name {
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+  }
+  job {
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+  }
 }
-(.section1_card_name name
-.section1_card_name job)
-.section1_image{}
-.section1_links{}
+.section1_image {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 240px;
+  position: relative;
+  display: block;
+}
+/*
+.section1_links {
+}
+/*
 .section1_element{}
 */
