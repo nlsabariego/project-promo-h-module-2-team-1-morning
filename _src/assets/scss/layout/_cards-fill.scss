@@ -9,24 +9,17 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    position: relative;
   }
   .icons-2:before {
     content: "\f11c";
-    left: 0;
-    font-weight: 400;
-    font-family: "Font Awesome 5 Pro";
-    text-rendering: auto;
-    -webkit-font-smoothing: antialiased;
-    color: $colorOrange;
+    @include CardsIcons;
   }
 
   &__title {
     @include CardTitle;
     padding: 1rem 1.6rem 1rem 3.1rem;
     width: 100%;
-  }
-
-  &__group--input {
   }
 
   &__label {
@@ -40,5 +33,15 @@
     height: 3rem;
     width: 100%;
     display: block;
+  }
+
+  &__button-image {
+    background: $colorOrange;
+    border: none;
+    width: 14rem;
+    height: 3rem;
+    border-radius: 0.3rem;
+    font-family: $fontFamily;
+    color: $colorWhite;
   }
 }

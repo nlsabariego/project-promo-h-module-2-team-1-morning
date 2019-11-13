@@ -12,7 +12,7 @@
   width: 25rem;
   height: 6.3rem;
 
-  @media all and (min-width:768px) {
+  @media all and (min-width: 768px) {
     width: 41.9rem;
     height: 10.5rem;
   }
@@ -25,9 +25,9 @@
   padding-top: 3.54rem;
   padding-bottom: 1.78rem;
 
-  @media all and (min-width:768px) {
-  padding-top: 3.1rem;
-  padding-bottom: 2.7rem;
+  @media all and (min-width: 768px) {
+    padding-top: 3.1rem;
+    padding-bottom: 2.7rem;
   }
   &__title {
     font-family: $fontFamilyLandingTitle;
@@ -40,47 +40,47 @@
     line-height: normal;
     letter-spacing: normal;
 
-    @media all and (min-width:768px) {
+    @media all and (min-width: 768px) {
       width: 27.8rem;
       font-size: 2.4rem;
+    }
   }
-}
   &__text {
     width: 26.48rem;
-    font-family: $fontFamilyText;
+    font-family: $fontFamily;
     color: $colorDarkGreenBlue;
     font-size: 1.28rem;
     font-weight: normal;
     font-stretch: normal;
-    font-style:normal;
+    font-style: normal;
     line-height: normal;
     letter-spacing: normal;
     text-align: center;
 
-    @media all and (min-width:768px) {
+    @media all and (min-width: 768px) {
       width: 33.1rem;
       font-size: 1.6rem;
-      }
+    }
   }
 }
-.landing__menu__list{
+.landing__menu__list {
   border: solid 0.16rem rgba(225, 115, 52, 0.21);
   border-radius: 0.4rem;
   width: 26.8rem;
-  font-family: $fontFamilyText;
+  font-family: $fontFamily;
   font-size: 1.28rem;
   display: flex;
   justify-content: space-between;
   text-align: center;
   padding: 1.5rem 2rem 1.78rem 2rem;
 
-  @media all and (min-width:768px) {
+  @media all and (min-width: 768px) {
     border: solid 0.2rem rgba(225, 115, 52, 0.21);
     width: 32.5rem;
     border-radius: 0.5rem;
     font-size: 1.6rem;
     padding: 1.5rem 2rem 2.2rem 2rem;
-    }
+  }
 
   &--design,
   &--fill,
@@ -88,9 +88,9 @@
     text-align: center;
     width: 6rem;
     color: $colorDarkGrey;
-    @media all and (min-width:768px) {
+    @media all and (min-width: 768px) {
       width: 7.5rem;
-      }
+    }
   }
 }
 .icon-land-design::before {
@@ -98,6 +98,7 @@
   border: green solid 1px;
   color: $colorOrange;
   font-size: 2.24rem;
+<<<<<<< HEAD
   @media all and (min-width:768px) {
   font-size: 2.8rem;
 }
@@ -110,6 +111,11 @@
   @media all and (min-width:768px) {
   font-size: 2.8rem;
 }
+=======
+  @media all and (min-width: 768px) {
+    font-size: 2.8rem;
+  }
+>>>>>>> master
 }
 // .far,
 // .fas {
@@ -130,12 +136,12 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  font-family: $fontFamilyTitle;
+  font-family: $fontFamily;
   font-size: 1.6rem;
   font-weight: 600;
   text-transform: $textTransformTitle;
   margin: 3.86rem 10.1rem 3rem 9rem;
-  @media all and (min-width:768px) {
+  @media all and (min-width: 768px) {
     margin: 19.6rem 31.9rem 5.9rem 32rem;
-    }
+  }
 }
