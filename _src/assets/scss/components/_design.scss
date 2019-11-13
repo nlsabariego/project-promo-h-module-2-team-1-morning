@@ -10,10 +10,15 @@
     &--title {
       @include CardTitle;
     }
+    .icons-1:before {
+      content: "\f248";
+      @include CardsIcons;
+    }
   }
 
   &__form {
     border: solid green 2px;
+    display: flex;
 
     &--title {
       @include CardText;
@@ -26,7 +31,6 @@
   border: solid #fabada 2px;
 
   display: flex;
-  flex-direction: row;
 }
 
 .palette-color {
