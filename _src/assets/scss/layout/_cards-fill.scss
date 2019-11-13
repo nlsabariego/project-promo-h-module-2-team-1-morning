@@ -1,0 +1,27 @@
+.form-fill {
+  width: 100%;
+
+  &__group--title {
+    display: flex;
+    flex-direction: row;
+  }
+
+  &__title {
+    @include CardTitle;
+    padding: 1rem 1.6rem 1rem 3.1rem;
+    width: 100%;
+  }
+  &__group--input {
+  }
+
+  &__input {
+    display: block;
+  }
+  &__label {
+    @include CardText;
+  }
+
+  &__input {
+    @include CardInput;
+  }
+}
