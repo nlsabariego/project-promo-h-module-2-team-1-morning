@@ -1,3 +1,7 @@
+.cards__form {
+  margin: 0 2rem;
+}
+
 .form-fill {
   width: 100%;
 
@@ -6,6 +10,15 @@
     flex-direction: row;
     align-items: center;
   }
+  .icons-2:before {
+    content: "\f11c";
+    left: 0;
+    font-weight: 400;
+    font-family: "Font Awesome 5 Pro";
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    color: $colorOrange;
+  }
 
   &__title {
     @include CardTitle;
@@ -13,30 +26,19 @@
     width: 100%;
   }
 
-  .icons-2:before {
-    content: "\f11c";
-    left: 0;
-    top: 0;
-    height: 2rem;
-    font-weight: 400;
-    position: absolute;
-    font-family: "Font Awesome 5 Pro";
-    text-rendering: auto;
-    -webkit-font-smoothing: antialiased;
-    color: $colorOrange;
-  }
-
   &__group--input {
   }
 
   &__label {
     @include CardText;
+    margin: 0.8rem 0;
+    display: block;
   }
 
   &__input {
-    height: 3rem;
-    width: 28.1rem;
-    display: block;
     @include CardInput;
+    height: 3rem;
+    width: 100%;
+    display: block;
   }
 }
