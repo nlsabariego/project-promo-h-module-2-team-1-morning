@@ -15,3 +15,14 @@
 @mixin CardInput {
   border: 1px solid $colorGreen;
 }
+
+@mixin CardsIcons {
+  position: absolute;
+  left: 0;
+  font-weight: 400;
+  font-family: "Font Awesome 5 Pro";
+  font-size: 2rem;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  color: $colorOrange;
+}
