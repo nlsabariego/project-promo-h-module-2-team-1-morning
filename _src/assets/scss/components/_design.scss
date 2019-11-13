@@ -6,10 +6,19 @@
   &__header {
     border: solid blue 2px;
     display: flex;
+
+    &--title {
+      @include CardTitle;
+    }
   }
 
   &__form {
     border: solid green 2px;
+
+    &--title {
+      @include CardText;
+      text-transform: $textTransformTitle;
+    }
   }
 }
 
