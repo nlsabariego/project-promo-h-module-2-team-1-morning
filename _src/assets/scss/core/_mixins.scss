@@ -5,3 +5,13 @@
   text-transform: $textTransformTitle;
   color: $colorDarkGrey;
 }
+
+@mixin CardText {
+  font-family: $fontFamilyText;
+  font-size: $fontSizeCardText;
+  color: $colorDarkGreenBlue;
+}
+
+@mixin CardInput {
+  border: 1px solid $colorGreen;
+}
