@@ -15,6 +15,15 @@
 
   .icons-2:before {
     content: "\f11c";
+    left: 0;
+    top: 0;
+    height: 2rem;
+    font-weight: 400;
+    position: absolute;
+    font-family: "Font Awesome 5 Pro";
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    color: $colorOrange;
   }
 
   &__group--input {
