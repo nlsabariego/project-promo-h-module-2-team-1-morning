@@ -11,6 +11,7 @@
     border: solid blue 2px;
     display: flex;
     position: relative;
+    bottom: 0rem;
 
     &--title {
       @include CardTitle;
