@@ -1,0 +1,79 @@
+.section1 {
+  height: 457px;
+  background-image: linear-gradient(#bfcdd0, #dde9ed);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__container {
+    border: 3px solid red;
+    display: block;
+
+    &__reset {
+      width: 76px;
+      height: 30px;
+      border-radius: 15px;
+      border: 1px solid $colorWhite;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      font-size: 12px;
+      text-transform: uppercase;
+    }
+    &__card {
+      width: 240px;
+      min-height: 330px;
+      margin-top: 20px;
+      border: 3px solid yellowgreen;
+
+      &__info {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        &__h2 {
+          font-family: $fontFamilyPhoto;
+          font-size: $fontSiePhotoTitle;
+        }
+        &__h3 {
+          font-family: $fontFamilyPhoto;
+          font-size: $fontSizePhotoText;
+        }
+      }
+      &__img {
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 200px;
+        position: relative;
+        display: block;
+      }
+      ///
+      &__links {
+        border: 3px red solid;
+        display: flex;
+        justify-content: flex-start;
+        padding: 10px 20px 12px;
+        margin: 0;
+        min-height: 58px;
+        box-sizing: border-box;
+
+        &__ul {
+          &__element {
+            width: 32px;
+            height: 32px;
+            border-radius: 16px;
+            margin: 10px;
+            border: solid 2px green;
+          }
+        }
+      }
+    }
+  }
+}
+
+.far {
+  .fa {
+    color: $colorDarkGrey;
+  }
+}
