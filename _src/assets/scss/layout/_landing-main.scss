@@ -93,35 +93,34 @@
     }
   }
 }
-.icon-land-design::before {
+.icon-land-design:before {
   content: "\f248";
-  border: green solid 1px;
+  font-family: "Font Awesome 5 Pro";
   color: $colorOrange;
   font-size: 2.24rem;
   @media all and (min-width:768px) {
   font-size: 2.8rem;
+ }
 }
-}
-.icon-land-fill::before {
-  content: "\f1e0";
-  border: green solid 1px;
+.icon-land-fill:before {
+  content: "\f11c";
+  font-family: "Font Awesome 5 Pro";
   color: $colorOrange;
   font-size: 2.24rem;
   @media all and (min-width:768px) {
   font-size: 2.8rem;
-}
-  @media all and (min-width: 768px) {
-    font-size: 2.8rem;
   }
 }
-// .far,
-// .fas {
-//   color: $colorOrange;
-//   font-size: 2.24rem;
-//   @media all and (min-width:768px) {
-//     font-size: 2.8rem;
-//     }
-// }
+
+.icon-land-share:before {
+  content: "\f1e0";
+  font-family: "Font Awesome 5 Pro";
+  color: $colorOrange;
+  font-size: 2.24rem;
+  @media all and (min-width:768px) {
+  font-size: 2.8rem;
+  }
+}
 
 .landing__button {
   background: $colorBlue;
