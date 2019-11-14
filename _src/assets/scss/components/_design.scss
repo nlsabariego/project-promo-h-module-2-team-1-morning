@@ -2,17 +2,18 @@
   border: solid red 5px;
 }
 
+.icons-1:before {
+  content: "\f248";
+  @include CardsIcons;
+}
 .design {
   &__header {
     border: solid blue 2px;
     display: flex;
+    position: relative;
 
     &--title {
       @include CardTitle;
-    }
-    .icons-1:before {
-      content: "\f248";
-      @include CardsIcons;
     }
   }
 
