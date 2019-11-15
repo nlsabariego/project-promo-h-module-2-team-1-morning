@@ -6,7 +6,6 @@
   align-items: center;
 
   &__container {
-    border: 3px solid red;
     display: block;
 
     &__reset {
@@ -24,7 +23,6 @@
       width: 240px;
       min-height: 330px;
       margin-top: 20px;
-      border: 3px solid yellowgreen;
 
       &__info {
         display: flex;
@@ -50,21 +48,22 @@
       }
       ///
       &__links {
-        border: 3px red solid;
-        display: flex;
-        justify-content: flex-start;
         padding: 10px 20px 12px;
         margin: 0;
         min-height: 58px;
         box-sizing: border-box;
 
         &__ul {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-evenly;
+
           &__element {
             width: 32px;
             height: 32px;
             border-radius: 16px;
-            margin: 10px;
             border: solid 2px green;
+            box-sizing: border-box;
           }
         }
       }
