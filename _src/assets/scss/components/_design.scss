@@ -1,24 +1,33 @@
 .design-container {
-  border: solid red 5px;
+  // border: solid red 5px;
+  padding: 2.7rem 2rem 0rem 2rem;
+}
+
+.icons-1:before {
+  content: "\f248";
+  @include CardsIcons;
+}
+
+.icons-up:after {
+  content: "\f077";
+  @include CardsIcons;
 }
 
 .design {
   &__header {
     border: solid blue 2px;
     display: flex;
+    position: relative;
 
     &--title {
       @include CardTitle;
     }
-    .icons-1:before {
-      content: "\f248";
-      @include CardsIcons;
-    }
   }
 
   &__form {
-    border: solid green 2px;
+    // border: solid green 2px;
     display: flex;
+    border-bottom: solid 1px #d8d8d8;
 
     &--title {
       @include CardText;
@@ -30,7 +39,9 @@
 .form__palette {
   border: solid #fabada 2px;
 
+  margin-bottom: 3rem;
   display: flex;
+  flex-direction: column;
 }
 
 .palette-color {
