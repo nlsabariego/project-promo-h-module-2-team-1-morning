@@ -1,1 +1,100 @@
+.design-container {
+  // border: solid red 5px;
+  padding: 2.7rem 2rem 0rem 2rem;
+}
 
+.icons-1:before {
+  content: "\f248";
+  @include CardsIcons;
+}
+
+.icons-up:after {
+  content: "\f077";
+  @include CardsIcons;
+}
+
+.design {
+  &__header {
+    border: solid blue 2px;
+    display: flex;
+    position: relative;
+
+    &--title {
+      @include CardTitle;
+    }
+  }
+
+  &__form {
+    // border: solid green 2px;
+    display: flex;
+    border-bottom: solid 1px #d8d8d8;
+
+    &--title {
+      @include CardText;
+      text-transform: $textTransformTitle;
+    }
+  }
+}
+
+.form__palette {
+  border: solid #fabada 2px;
+
+  margin-bottom: 3rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.palette-color {
+  // border: solid 2px;
+  display: flex;
+  flex-direction: row;
+  align-content: space-between;
+
+  width: 9rem;
+  height: 2.5rem;
+
+  &__1 {
+    width: 3rem;
+    background: $colorDarkGreenBlue;
+  }
+
+  &__2 {
+    width: 3rem;
+    background: $colorBlue;
+  }
+
+  &__3 {
+    width: 3rem;
+    background: $colorGreen;
+  }
+
+  &__4 {
+    width: 3rem;
+    background: $colorDriedBlood;
+  }
+
+  &__5 {
+    width: 3rem;
+    background: $colorRustyRed;
+  }
+
+  &__6 {
+    width: 3rem;
+    background: $colorTomato;
+  }
+
+  &__7 {
+    width: 3rem;
+    background: $colorSlate;
+  }
+
+  &__8 {
+    width: 3rem;
+    background: $colorFadedOrange;
+  }
+
+  &__9 {
+    width: 3rem;
+    background: $colorLightGreyBlue;
+  }
+}

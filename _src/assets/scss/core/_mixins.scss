@@ -1,5 +1,5 @@
 @mixin CardTitle {
-  font-family: $fontFamilyTitle;
+  font-family: $fontFamily;
   font-size: $fontSizeCardTitle;
   font-weight: $fontWeightCardTitle;
   text-transform: $textTransformTitle;
@@ -7,7 +7,7 @@
 }
 
 @mixin CardText {
-  font-family: $fontFamilyText;
+  font-family: $fontFamily;
   font-size: $fontSizeCardText;
   color: $colorDarkGreenBlue;
 }
