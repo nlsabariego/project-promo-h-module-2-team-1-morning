@@ -1,4 +1,4 @@
-.cards__form {
+.container-fill {
   margin: 0 2rem;
 }
 
@@ -11,7 +11,7 @@
     align-items: center;
     position: relative;
   }
-  .icons-2::before {
+  .icons-2:before {
     content: "\f11c";
     @include CardsIcons;
   }
