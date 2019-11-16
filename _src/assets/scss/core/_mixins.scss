@@ -22,7 +22,16 @@
   font-weight: 400;
   font-family: "Font Awesome 5 Pro";
   font-size: 2rem;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
   color: $colorOrange;
+}
+
+@mixin CardsArrow {
+  content: "\f078";
+  position: absolute;
+  right: 0;
+  font-weight: 600;
+  font-family: "Font Awesome 5 Pro";
+  font-size: 2rem;
+  color: $colorDarkGrey;
+  transform: rotate(180deg);
 }

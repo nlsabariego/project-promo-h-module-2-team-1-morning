@@ -16,6 +16,10 @@
     @include CardsIcons;
   }
 
+  .arrow:after {
+    @include CardsArrow;
+  }
+
   &__title {
     @include CardTitle;
     padding: 1rem 1.6rem 1rem 3.1rem;
