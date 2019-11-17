@@ -77,6 +77,8 @@
         height: 5.4rem;
         border: solid 2px violet;
         display: flex;
+        justify-content: space-between;
+        align-items: center;
 
         &__items {
           border: blue 1px solid;
@@ -85,7 +87,34 @@
         }
 
         .icon-tel:before {
-          content: "\f2ed";
+          content: "\f3cd";
+          font-family: "FontAwesome";
+          color: $colorDarkGrey;
+          
+          font-size: 1.8rem;
+          border: 2px solid #a2deaf;
+          border-radius: 1.6rem;
+          padding: 0.5rem;
+          
+        }
+        .icon-mail:before {
+          content: "\f0e0";
+          font-family: "FontAwesome";
+          color: $colorDarkGrey;
+          font-size: 2rem;
+          border: 2px solid #a2deaf;
+          border-radius: 1.6rem;
+        }
+        .icon-linkedin:before {
+          content: "\f0e1";
+          font-family: "FontAwesome";
+          color: $colorDarkGrey;
+          font-size: 2rem;
+          border: 2px solid #a2deaf;
+          border-radius: 1.6rem;
+        }
+        .icon-github:before {
+          content: "\f113";
           font-family: "FontAwesome";
           color: $colorDarkGrey;
           font-size: 2rem;
