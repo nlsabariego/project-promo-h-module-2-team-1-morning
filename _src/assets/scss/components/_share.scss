@@ -1,0 +1,22 @@
+.icons-3:before {
+  content: "\f1e0";
+  @include CardsIcons;
+}
+
+.icons-up:after {
+  content: "\f077";
+  @include CardsIcons;
+}
+
+.share__container {
+  padding: 1rem 2 rem 0rem 2rem;
+
+  &__header {
+    border: solid blue 2px;
+    display: flex;
+    position: relative;
+  }
+  &__title {
+    @include CardTitle;
+  }
+}
