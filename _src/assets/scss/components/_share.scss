@@ -8,8 +8,10 @@
   @include CardsIcons;
 }
 
-.share__container {
-  padding: 1rem 2 rem 0rem 2rem;
+.share {
+  &__container {
+    padding: 1rem 2 rem 0rem 2rem;
+  }
 
   &__header {
     border: solid blue 2px;
@@ -18,5 +20,16 @@
   }
   &__title {
     @include CardTitle;
+  }
+
+  &__button-create {
+    background: $colorOrange;
+    @include CardTitle;
+    color: $colorWhite;
+    border: none;
+    border-radius: 1.2rem;
+    height: 5rem;
+    padding-left: 1.7rem;
+    padding-right: 1.8rem;
   }
 }
