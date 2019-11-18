@@ -76,7 +76,7 @@
       background-size: cover;
     }
     &__links {
-      height: 5.4rem;
+      // height: 5.4rem;
       // border: solid 2px violet;
       display: flex;
       justify-content: space-between;
@@ -85,7 +85,7 @@
       &__items {
         border: 2px solid $colorGreen;
         width: 3.2rem;
-        height: 3.2rem;
+        // height: 3.2rem;
         border-radius: 1.6rem;
       }
       .icon-tel:before {
