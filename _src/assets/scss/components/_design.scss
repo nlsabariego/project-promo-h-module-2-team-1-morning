@@ -13,8 +13,11 @@ form {
 }
 
 .icons-up:after {
-  content: "\f077";
-  @include CardsIcons;
+  @include CardsArrow;
+
+  // content: "\f077";
+  // @include CardsIcons;
+  // padding-left: 25rem;
 }
 
 .design {
@@ -22,9 +25,11 @@ form {
     border: solid blue 2px;
     display: flex;
     position: relative;
+    padding: 1rem 1.6rem 1rem 3.1rem;
     // margin-bottom: 2.2rem;
 
     &--title {
+      border: solid 3px;
       @include CardTitle;
     }
   }
@@ -33,6 +38,7 @@ form {
     // border: solid green 2px;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
 
     border-bottom: solid 1px #d8d8d8;
 
@@ -49,8 +55,9 @@ form {
 
   display: flex;
   flex-direction: column;
-  position: relative;
-  left: 8.2rem;
+
+  // position: relative;
+  // left: 8.2rem;
 
   margin-bottom: 3rem;
 
@@ -68,10 +75,11 @@ form {
   display: inherit;
 }
 .palette-color {
-  // border: solid 2px;
+  border: solid 2px;
   display: flex;
   flex-direction: row;
   align-content: space-between;
+  margin-left: 1rem;
 
   width: 9rem;
   height: 2.5rem;
