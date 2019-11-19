@@ -42,7 +42,8 @@
     display: flex;
     flex-direction: column;
     margin-top: 2rem;
-    // border: 3px solid yellowgreen;
+    border-radius: 0.2rem;
+    box-shadow: 0 1px 10px 0 $colorBlack, 0 1px 3px 0 rgba(78, 78, 78, 0.35);
     padding-top: 2.1rem;
     background: $colorWhite;
     &__info {
