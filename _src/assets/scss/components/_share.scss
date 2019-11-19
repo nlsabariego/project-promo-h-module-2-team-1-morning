@@ -1,30 +1,35 @@
-.icons-3:before {
-  @include CardsIconShare;
-}
 
-.arrow:after {
-  @include CardsArrow;
-}
 
-.share {
-  &__container {
-    padding: 1rem 2 rem 0rem 2rem;
-    border: 2px red solid;
+.share__container{
+    padding: 1rem 2rem 0rem 2rem;
+    // border: 2px red solid;
     display: flex;
-   flex-direction: column;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-
-  &__header {
+  .icons-3:before {
+    @include CardsIconShare;
+  }
+  
+  .arrow:after {
+    @include CardsArrow;
+  }
+  .share {
+    &__header {
     width: 100%;
-    justify-content: flex-start;
-    padding: 1rem 1.6rem 1rem 3.1rem;
-    border: solid blue 2px;
+    // padding: 1rem 1.6rem 0rem 3.1rem;
+    // justify-content: flex-start;
+    // border-top: solid 1px #d8d8d8;
+    border: 2px solid blue;
     display: flex;
     position: relative;
-  }
+    padding-top: 1rem;
+    margin-top: 3rem;
+    }
   &__title {
+    // width: 100%;
+    // position: relative;
     @include CardTitle;
   }
 
@@ -40,5 +45,58 @@
     height: 5rem;
     padding-left: 1.7rem;
     padding-right: 1.8rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.32);
   }
+}
+.icon-card:before {
+  content: "\f2bb";
+  font-family: FontAwesome;
+  margin-right: 0.9rem;
+}
+.share__notification {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-top: #d8d8d8 solid 0.1rem;
+  border-bottom:  #d8d8d8 solid 0.1rem;
+  margin-bottom: 3rem;
+}
+.notification__title {
+  font-family: $fontFamily;
+  font-size: $fontSizeCardTitle;
+  font-weight: $fontWeightCardTitle;
+  color: $colorDarkGrey;
+  padding-top: 2rem;
+}
+.notification__link {
+  font-family: $fontFamily;
+  color: $colorOrange;
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 0.5rem 0 1rem 0;
+}
+
+.notification__button-tw {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 18.1rem;
+  height: 3rem;
+  background-color: #00a0f5;
+  color: $colorWhite;
+  border-radius: 3px;
+  font-size: 1.4rem;
+  font-family: $fontFamily;
+  margin-bottom: 3rem;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.32);
+
+}
+.icon-tw:before {
+  content: "\f099";
+  font-family: FontAwesome;
+  margin-right: 0.95rem;
 }
