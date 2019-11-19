@@ -4,7 +4,7 @@
 
 const defaultName = 'Nombre Apellido';
 const defaultJob = 'Front-end developer';
-const isNotFilled = "";
+// const isNotFilled = '';
 const cardNameElement = document.querySelector('.js-card-name');
 const inputNameElement = document.querySelector('.js-form-name');
 const cardJobElement = document.querySelector('.js-card-job');
@@ -17,12 +17,13 @@ const inputJobElement = document.querySelector('.js-form-job');
 function formData() {
   const nameValue = inputNameElement.value;
   const jobValue = inputJobElement.value;
-  if (nameValue !== isNotFilled) {
+  // si nameValue es = a '', sería truthy
+  if (nameValue) {
     cardNameElement.innerHTML = nameValue;
   } else {
     cardNameElement.innerHTML = defaultName;
   }
-  if (jobValue !== isNotFilled) {
+  if (jobValue) {
     cardJobElement.innerHTML = jobValue;
   } else {
     cardJobElement.innerHTML = defaultJob;
@@ -30,6 +31,8 @@ function formData() {
 
 }
 
+///¿POR QUÉ METEMOS APELLIDO DENTRO DEL EVENTO SI NO LO UTILIZAMOS EN EL
+//EVENTO DEL NAME?
 
 inputNameElement.addEventListener('keyup', formData);
 inputJobElement.addEventListener('keyup', formData);
@@ -46,9 +49,9 @@ const email = document.querySelector('.js-card-email');
 const inputTelElement = document.querySelector('.js-form-tel')
 const tel = document.querySelector('.js-card-tel');
 
+
 //para añadir o quitar el filtro
 const filter = document.querySelector('.js-items--filter');
-
 
 const iconLinkedin = document.querySelector('.js-linkedin');
 const iconGithub = document.querySelector('.js-github');
@@ -56,8 +59,14 @@ const iconEmail = document.querySelector('.js-email');
 const iconTel = document.querySelector('.js-tel');
 
 
+///¿PODRÍAMOS METER HREF COMO VARIABLES Y LUEGO SUMARLE EL VALOR DEL INPUT?
+//PORQUE DEL OTRO MODO LO AÑADE SI ESCRIBIMOS MÁS DE LA CUENTA
+
+//const linkedin=(https//ww../)
+
 function formIcon() {
   const linkedinValue = inputLinkedinElement.value;
+  //linkedin.href=linkedin+linkedinValue;
   linkedin.href += linkedinValue;
   const githubValue = inputGithubElement.value;
   github.href += githubValue;
@@ -67,24 +76,24 @@ function formIcon() {
   tel.href = telValue;
 
 
-  if (linkedinValue !== isNotFilled) {
+  if (linkedinValue) {
     iconLinkedin.classList.remove('js-items--filter');
   } else {
     iconLinkedin.classList.add('js-items--filter');
   }
 
-  if (githubValue !== isNotFilled) {
+  if (githubValue) {
     iconGithub.classList.remove('js-items--filter');
   } else {
     iconGithub.classList.add('js-items--filter');
   }
 
-  if (emailValue !== isNotFilled) {
+  if (emailValue) {
     iconEmail.classList.remove('js-items--filter');
   } else {
     iconEmail.classList.add('js-items--filter');
   }
-  if (telValue !== isNotFilled) {
+  if (telValue) {
     iconTel.classList.remove('js-items--filter');
   } else {
     iconTel.classList.add('js-items--filter');

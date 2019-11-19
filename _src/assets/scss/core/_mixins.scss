@@ -25,6 +25,13 @@
   color: $colorOrange;
 }
 
+@mixin CardsIconShare {
+  content: "\f1e0";
+  font-family: "FontAwesome";
+  color: $colorOrange;
+  font-size: 2.24rem;
+}
+
 @mixin CardsArrow {
   content: "\f078";
   position: absolute;
