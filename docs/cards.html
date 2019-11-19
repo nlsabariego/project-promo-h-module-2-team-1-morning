@@ -5,7 +5,7 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link href="https://fonts.googleapis.com/css?family=Merriweather:400,900|Montserrat:400,700|Open+Sans|Rubik&display=swap"
-        rel="stylesheet">
+        rel="stylesheet" />
         <script src="https://kit.fontawesome.com/61294e7035.js" crossorigin="anonymous"></script>
         <title>Awesome profile-cards</title>
         <link rel="icon" href="./favicon.png" />
@@ -24,8 +24,8 @@
                     <div class="card-photo__button">
                         <button type="button" class="card-photo__button__reset icon-reset">Reset</button>
                     </div>
-                    <div class="card-photo__card">
-                        <div class="card-photo__card__info">
+                    <div class="card-photo__card js-card js-card-palette1">
+                        <div class="card-photo__card__info js-border-info">
                              <h2 class="card-photo__card__info__name js-card-name">
         Nombre Apellido
       </h2>
@@ -57,55 +57,52 @@
                         </div>
                     </div>
                 </section>
-                <section class="design-container">
-                    <div class="design__header icons-1 arrow">
+                <section class="design-container js-collapsable js-collapsable-open">
+                    <div class="design__header icons-1 arrow js-collapsable--trigger">
                          <h4 class="design__header--title">diseña</h4>
 
                     </div>
-                    <div class="design__form">
+                    <div class="design__form js-collapsable--content">
                          <h5 class="design__form--title">colores</h5>
 
                         <form class="form__palette">
                             <div class="form__palette--1">
-                                <label class="x1" for="">
-                                    <input type="radio" name="palette" id="form-palette1" class="design__form--radio"
-                                    />
-                                    <ul class="palette-color">
-                                        <li class="palette-color__1"></li>
-                                        <li class="palette-color__2"></li>
-                                        <li class="palette-color__3"></li>
-                                    </ul>
-                                </label>
+                                <label class="x1" for=""></label>
+                                <input type="radio" name="palette" id="form-palette1" class="design__form--radio js-form-palette1"
+                                />
+                                <ul class="palette-color">
+                                    <li class="palette-color__1"></li>
+                                    <li class="palette-color__2"></li>
+                                    <li class="palette-color__3"></li>
+                                </ul>
                             </div>
                             <div class="form__palette--2">
-                                <label class="x1" for="">
-                                    <input type="radio" name="palette" id="form-palette2" class="design__form--radio"
-                                    />
-                                    <ul class="palette-color">
-                                        <li class="palette-color__4"></li>
-                                        <li class="palette-color__5"></li>
-                                        <li class="palette-color__6"></li>
-                                    </ul>
-                                </label>
+                                <label class="x1" for=""></label>
+                                <input type="radio" name="palette" id="form-palette2" class="design__form--radio js-form-palette2"
+                                />
+                                <ul class="palette-color">
+                                    <li class="palette-color__4"></li>
+                                    <li class="palette-color__5"></li>
+                                    <li class="palette-color__6"></li>
+                                </ul>
                             </div>
                             <div class="form__palette--3">
-                                <label class="x1" for="">
-                                    <input type="radio" name="palette" id="form-palette3" class="design__form--radio"
-                                    />
-                                    <ul class="palette-color">
-                                        <li class="palette-color__7"></li>
-                                        <li class="palette-color__8"></li>
-                                        <li class="palette-color__9"></li>
-                                    </ul>
-                                </label>
+                                <label class="x1" for=""></label>
+                                <input type="radio" name="palette" id="form-palette3" class="design__form--radio js-form-palette3"
+                                />
+                                <ul class="palette-color">
+                                    <li class="palette-color__7"></li>
+                                    <li class="palette-color__8"></li>
+                                    <li class="palette-color__9"></li>
+                                </ul>
                             </div>
                         </form>
                     </div>
                 </section>
-                <section class="container-fill">
+                <section class="container-fill js-collapsable">
                     <form action="" method="">
                         <fieldset class="form-fill">
-                            <div class="form-fill__group--title icons-2 arrow">
+                            <div class="form-fill__group--title icons-2 arrow js-collapsable--trigger">
                                  <h4 class="form-fill__title">Rellena</h4>
 
                             </div>
@@ -150,18 +147,21 @@
                         </fieldset>
                     </form>
                 </section>
-                <section class="share__container">
-                    <div class="share__header icons-3 arrow">
+                <section class="share__container js-collapsable">
+                    <div class="share__header icons-3 arrow js-collapsable--trigger">
                          <h4 class="share__title">comparte</h4>
 
                     </div>
-                    <button class="share__button-create icon-card">
-                        </i>crear tarjeta</button>
+                    <div class="js-collapsable--content">
+                        <button class="share__button-create icon-card">
+                            </i>crear tarjeta</button>
+                    </div>
                     <div class="share__notification">
                          <h5 class="notification__title">La tarjeta ha sido creada:</h4>
     <a class="notification__link" href="">www.algo.com</a>
     <a class="notification__button-tw icon-tw" href=""><i></i>Compartir en twitter</a>
   </div>
+
 </section>
 
 </main>
