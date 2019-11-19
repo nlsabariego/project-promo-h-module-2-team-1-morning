@@ -1,11 +1,9 @@
 .icons-3:before {
-  content: "\f1e0";
-  @include CardsIcons;
+  @include CardsIconShare;
 }
 
-.icons-up:after {
-  content: "\f077";
-  @include CardsIcons;
+.arrow:after {
+  @include CardsArrow;
 }
 
 .share {
