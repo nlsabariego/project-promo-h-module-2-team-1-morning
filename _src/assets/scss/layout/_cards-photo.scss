@@ -1,19 +1,22 @@
 .card-photo {
+  background-image: linear-gradient(#bfcdd0, #dde9ed);
   width: auto;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-
-  &__container {
-    // width: 32rem;
-    background-image: linear-gradient(#bfcdd0, #dde9ed);
-    border: 3px solid red;
-    padding: 3.8rem 3.5rem 4rem 4.5rem;
+  width: 100%;
+  border: 3px solid red;
+  padding: 3.8rem 3.5rem 4rem 4.5rem;
 
     @media all and (min-width: 768px){
       padding: 17.7rem 4.4rem 26rem 4.5rem;
     }
-
+    &__button {
+      width: 24rem;
+      display: flex;
+      justify-content: flex-start;
+    
     &__reset {
       width: 7.5rem;
       height: 3rem;
@@ -26,6 +29,7 @@
       text-transform: uppercase;
       display: flex;
       justify-content: space-evenly;
+    }
     }
       .icon-reset:before {
         content: "\f2ed";
@@ -77,7 +81,7 @@
       }
     &__links {
         height: 5.4rem;
-        // border: solid 2px violet;
+        border: solid 2px violet;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -88,10 +92,9 @@
           width: 3.2rem;
           height: 3.2rem;
           border-radius: 1.6rem;
-
         }
 
-        .icon-tel:before, {
+        .icon-tel:before {
           content: "\f3cd";
           font-family: "FontAwesome";
           color: $colorDarkGreenBlue;
@@ -137,7 +140,7 @@
           cursor: pointer;
         }
        }
-      }
+      
       }
     }
   
