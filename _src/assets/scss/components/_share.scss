@@ -11,9 +11,17 @@
 .share {
   &__container {
     padding: 1rem 2 rem 0rem 2rem;
+    border: 2px red solid;
+    display: flex;
+   flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   &__header {
+    width: 100%;
+    justify-content: flex-start;
+    padding: 1rem 1.6rem 1rem 3.1rem;
     border: solid blue 2px;
     display: flex;
     position: relative;
@@ -23,6 +31,9 @@
   }
 
   &__button-create {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background: $colorOrange;
     @include CardTitle;
     color: $colorWhite;
