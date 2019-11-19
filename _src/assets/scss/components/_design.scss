@@ -1,10 +1,10 @@
-form {
-  display: inline;
-}
-
 .design-container {
   // border: solid red 5px;
-  padding: 1.7rem 2rem 0rem 2rem;
+  padding: 0 2rem;
+
+  @media all and (min-width: 768px) {
+    padding: 0;
+  }
 }
 
 .icons-1:before {
@@ -138,4 +138,17 @@ form {
 #form-palette1 {
   padding-top: 1rem;
   border: 2px solid red;
+}
+
+.js-collapsable--content {
+  display: none;
+}
+
+.js-collapsable-open {
+}
+.js-collapsable-open .arrow::after {
+  transform: rotate(-180deg);
+}
+.js-collapsable-open .js-collapsable--content {
+  display: flex;
 }

@@ -1,5 +1,37 @@
 'use strict';
 
+
+//DESIGN//
+
+const inputPalette1 = document.querySelector('.js-form-palette1');
+const inputPalette2 = document.querySelector('.js-form-palette2');
+const inputPalette3 = document.querySelector('.js-form-palette3');
+const card = document.querySelector('.js-card');
+
+function paintPalette1() {
+  card.classList.add('js-card-palette1');
+  card.classList.remove('js-card-palette2');
+  card.classList.remove('js-card-palette3');
+}
+
+function paintPalette2() {
+  card.classList.add('js-card-palette2');
+  card.classList.remove('js-card-palette1');
+  card.classList.remove('js-card-palette3');
+}
+
+function paintPalette3() {
+  card.classList.add('js-card-palette3');
+  card.classList.remove('js-card-palette2');
+  card.classList.remove('js-card-palette1');
+}
+
+inputPalette1.addEventListener('click', paintPalette1);
+inputPalette2.addEventListener('click', paintPalette2);
+inputPalette3.addEventListener('click', paintPalette3);
+
+
+
 // console.log('>> Ready :)');
 
 const defaultName = 'Nombre Apellido';
@@ -113,3 +145,16 @@ inputTelElement.addEventListener('keyup', formIcon);
 
 
 //funcion collapsable - para el sprint no hace falta que se cierren los demás
+
+
+const collapsableTriggers = document.querySelectorAll('.js-collapsable--trigger');
+
+function updateCollapsable(event) {
+  const currentCollapsable = event.currentTarget.parentElement;
+
+  currentCollapsable.classList.toggle('js-collapsable-open');
+};
+
+for (const item of collapsableTriggers) {
+  item.addEventListener('click', updateCollapsable);
+}
