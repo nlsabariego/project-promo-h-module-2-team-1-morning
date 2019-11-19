@@ -1,22 +1,20 @@
+.share__container {
+  padding: 1rem 2rem 0rem 2rem;
+  // border: 2px red solid;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.icons-3:before {
+  @include CardsIconShare;
+}
 
-
-.share__container{
-    padding: 1rem 2rem 0rem 2rem;
-    // border: 2px red solid;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .icons-3:before {
-    @include CardsIconShare;
-  }
-  
-  .arrow:after {
-    @include CardsArrow;
-  }
-  .share {
-    &__header {
+.arrow:after {
+  @include CardsArrow;
+}
+.share {
+  &__header {
     width: 100%;
     // padding: 1rem 1.6rem 0rem 3.1rem;
     // justify-content: flex-start;
@@ -26,7 +24,7 @@
     position: relative;
     padding-top: 1rem;
     margin-top: 3rem;
-    }
+  }
   &__title {
     // width: 100%;
     // position: relative;
@@ -62,7 +60,7 @@
   justify-content: center;
   align-items: center;
   border-top: #d8d8d8 solid 0.1rem;
-  border-bottom:  #d8d8d8 solid 0.1rem;
+  border-bottom: #d8d8d8 solid 0.1rem;
   margin-bottom: 3rem;
 }
 .notification__title {
@@ -93,7 +91,6 @@
   font-family: $fontFamily;
   margin-bottom: 3rem;
   box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.32);
-
 }
 .icon-tw:before {
   content: "\f099";
