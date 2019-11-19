@@ -1,11 +1,12 @@
 .footer {
+  border-top: 1px solid $colorBorderTop;
   bottom: 0;
   display: flex;
   flex-direction: column;
   width: 100%;
   height: 11rem;
   align-items: center;
-  background: #ffffff;
+  background: $colorWhite;
 
   @media all and (min-width: 768px) {
     flex-direction: row;
@@ -14,10 +15,10 @@
   }
 
   &__copy {
-    font-size: 14px;
-    margin: 15px 0 15px 0;
-    color: #6b6b6b;
-    font-family: "Open Sans", sans-serif;
+    font-size: 1.4rem;
+    margin: 1.5rem 0 1.5rem 0;
+    color: $colorGrey;
+    font-family: $fontFamily;
 
     @media all and (min-width: 768px) {
       margin-left: 4rem;
