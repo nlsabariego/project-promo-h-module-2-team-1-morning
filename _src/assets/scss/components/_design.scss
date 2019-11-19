@@ -4,7 +4,7 @@ form {
 
 .design-container {
   // border: solid red 5px;
-  padding: 2.7rem 2rem 0rem 2rem;
+  margin: 0 2rem;
 }
 
 .icons-1:before {
@@ -14,10 +14,6 @@ form {
 
 .arrow:after {
   @include CardsArrow;
-
-  // content: "\f077";
-  // @include CardsIcons;
-  // padding-left: 25rem;
 }
 
 .design {
@@ -25,11 +21,13 @@ form {
     // border: solid blue 2px;
     display: flex;
     position: relative;
-    padding: 1rem 1.6rem 1rem 3.1rem;
+    // padding: 1rem 1.6rem 1rem 3.1rem;
+    padding: 2.7rem 1.6rem 1rem 3.1rem;
+
     // margin-bottom: 2.2rem;
 
     &--title {
-      border: solid 3px;
+      // border: solid 3px;
       @include CardTitle;
     }
   }
@@ -39,7 +37,6 @@ form {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-
     border-bottom: solid 1px #d8d8d8;
 
     &--title {
@@ -47,12 +44,16 @@ form {
       text-transform: $textTransformTitle;
       margin-top: 2rem;
     }
+
+    // &--radio {
+    //   padding-top: 1rem;
+    //   border: 2px solid red;
+    // }
   }
 }
 
 .form__palette {
-  border: solid #fabada 2px;
-
+  // border: solid #fabada 2px;
   display: flex;
   flex-direction: column;
 
@@ -64,7 +65,7 @@ form {
   &--1,
   &--2,
   &--3 {
-    border: solid 2px red;
+    // border: solid 2px red;
     display: flex;
     flex-direction: row;
     margin-top: 2rem;
@@ -75,7 +76,7 @@ form {
   display: inherit;
 }
 .palette-color {
-  border: solid 2px;
+  // border: solid 2px;
   display: flex;
   flex-direction: row;
   align-content: space-between;
@@ -128,4 +129,9 @@ form {
     width: 3rem;
     background: $colorLightGreyBlue;
   }
+}
+
+#form-palette1 {
+  padding-top: 1rem;
+  border: 2px solid red;
 }
