@@ -1,5 +1,15 @@
 .design-container {
-  padding: 0 2rem;
+  border: solid red 5px;
+  //margin: 0 2rem;
+
+  &__hover {
+    border: 1px solid greenyellow;
+    position: relative;
+  }
+
+  &__hover:hover {
+    background: $colorLightGrey;
+  }
 
   @media all and (min-width: 768px) {
     padding: 0;
@@ -17,15 +27,18 @@
 
 .design {
   &__header {
+    border: solid blue 2px;
     display: flex;
-    position: relative;
+    //position: relative;
     // padding: 1rem 1.6rem 1rem 3.1rem;
-    padding: 2.7rem 1.6rem 1rem 3.1rem;
-
+    //padding: 2.7rem 1.6rem 1rem 3.1rem;
+    margin: 2rem;
     // margin-bottom: 2.2rem;
 
     &--title {
+      border: solid 3px;
       @include CardTitle;
+      padding-left: 3rem;
     }
   }
 

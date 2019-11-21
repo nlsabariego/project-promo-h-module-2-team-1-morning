@@ -18,7 +18,7 @@
 
 @mixin CardsIcons {
   position: absolute;
-  left: 0;
+  left: 2rem;
   font-weight: 400;
   font-family: "Font Awesome 5 Pro";
   font-size: 2rem;
@@ -36,7 +36,7 @@
 @mixin CardsArrow {
   content: "\f078";
   position: absolute;
-  right: 0;
+  right: 2rem;
   font-weight: 600;
   font-family: "Font Awesome 5 Pro";
   font-size: 2rem;
