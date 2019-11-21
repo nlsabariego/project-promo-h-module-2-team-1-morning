@@ -28,6 +28,11 @@
     @include CardTitle;
     padding: 1rem 1.6rem 1rem 3.1rem;
     width: 100%;
+    border-top: solid 1px $colorBorderTop;
+  }
+
+  &__container {
+    display: block;
   }
 
   &__label {
@@ -41,6 +46,10 @@
     height: 3rem;
     width: 100%;
     display: block;
+
+    &::placeholder {
+      padding: 1rem;
+    }
   }
 
   &__button-image {

@@ -1,5 +1,4 @@
 .design-container {
-  // border: solid red 5px;
   padding: 0 2rem;
 
   @media all and (min-width: 768px) {
@@ -18,26 +17,19 @@
 
 .design {
   &__header {
-    // border: solid blue 2px;
     display: flex;
     position: relative;
-    // padding: 1rem 1.6rem 1rem 3.1rem;
     padding: 2.7rem 1.6rem 1rem 3.1rem;
 
-    // margin-bottom: 2.2rem;
-
     &--title {
-      // border: solid 3px;
       @include CardTitle;
     }
   }
 
   &__form {
-    // border: solid green 2px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    border-bottom: solid 1px #d8d8d8;
 
     &--title {
       font-family: $fontFamily;
@@ -48,28 +40,17 @@
       margin-top: 2rem;
       font-weight: 400;
     }
-
-    // &--radio {
-    //   padding-top: 1rem;
-    //   border: 2px solid red;
-    // }
   }
 }
 
 .form__palette {
-  // border: solid #fabada 2px;
   display: flex;
   flex-direction: column;
-
-  // position: relative;
-  // left: 8.2rem;
-
   margin-bottom: 3rem;
 
   &--1,
   &--2,
   &--3 {
-    // border: solid 2px red;
     display: flex;
     flex-direction: row;
     margin-top: 2rem;
@@ -80,7 +61,6 @@
   display: inherit;
 }
 .palette-color {
-  // border: solid 2px;
   display: flex;
   flex-direction: row;
   align-content: space-between;

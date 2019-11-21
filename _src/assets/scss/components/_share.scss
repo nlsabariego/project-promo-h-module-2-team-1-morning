@@ -1,17 +1,17 @@
 .share__container {
   padding: 1rem 2rem 0rem 2rem;
-  // border: 2px red solid;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: 3rem;
+
+  @media all and (min-width: 768px) {
+    padding: 0;
+  }
 }
 .icons-3:before {
   @include CardsIconShare;
-
-  @media all and (min-width: 768px) {
-    transform: translateX(-20px);
-  }
 }
 
 .arrow:after {
@@ -20,31 +20,21 @@
 .share {
   &__header {
     width: 100%;
-    // padding: 1rem 1.6rem 0rem 3.1rem;
-    // justify-content: flex-start;
-    // border-top: solid 1px #d8d8d8;
     display: flex;
     position: relative;
-    padding-top: 1rem;
-    margin-top: 3rem;
+    padding: 1rem 1.6rem 1rem 3.1rem;
+    border-top: solid 1px $colorBorderTop;
   }
   &__title {
-    // width: 100%;
-    // position: relative;
     @include CardTitle;
-    padding: 0 0 10px 30px;
-
-    @media all and (min-width: 768px) {
-      padding-left: 10px;
-    }
   }
 
   &__button-create {
+    @include CardTitle;
     display: flex;
     justify-content: center;
     align-items: center;
     background: $colorOrange;
-    @include CardTitle;
     color: $colorWhite;
     border: none;
     border-radius: 1.2rem;
@@ -58,7 +48,7 @@
 }
 .icon-card:before {
   content: "\f2bb";
-  font-family: FontAwesome;
+  font-family: "FontAwesome";
   margin-right: 0.9rem;
 }
 .share__notification {
@@ -67,8 +57,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border-top: #d8d8d8 solid 0.1rem;
-  border-bottom: #d8d8d8 solid 0.1rem;
+  border-top: $colorBorderTop solid 0.1rem;
   margin-bottom: 3rem;
 }
 .notification__title {
@@ -102,6 +91,6 @@
 }
 .icon-tw:before {
   content: "\f099";
-  font-family: FontAwesome;
+  font-family: "FontAwesome";
   margin-right: 0.95rem;
 }
