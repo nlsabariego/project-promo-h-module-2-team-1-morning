@@ -1,5 +1,4 @@
 .design-container {
-  // border: solid red 5px;
   padding: 0 2rem;
 
   @media all and (min-width: 768px) {
@@ -18,7 +17,6 @@
 
 .design {
   &__header {
-    // border: solid blue 2px;
     display: flex;
     position: relative;
     // padding: 1rem 1.6rem 1rem 3.1rem;
@@ -27,13 +25,11 @@
     // margin-bottom: 2.2rem;
 
     &--title {
-      // border: solid 3px;
       @include CardTitle;
     }
   }
 
   &__form {
-    // border: solid green 2px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -144,10 +140,8 @@
   display: none;
 }
 
-.js-collapsable-open {
-}
-.js-collapsable-open .arrow::after {
-  transform: rotate(-180deg);
+.js-collapsable-open .arrow:after {
+ 
 }
 .js-collapsable-open .js-collapsable--content {
   display: flex;

@@ -16,6 +16,7 @@
     width: 24rem;
     display: flex;
     justify-content: flex-start;
+    
     &__reset {
       width: 7.5rem;
       height: 3rem;
@@ -28,6 +29,7 @@
       text-transform: uppercase;
       display: flex;
       justify-content: space-evenly;
+      cursor: pointer;
     }
   }
   .icon-reset:before {
