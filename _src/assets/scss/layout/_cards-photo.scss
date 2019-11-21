@@ -16,7 +16,6 @@
     width: 24rem;
     display: flex;
     justify-content: flex-start;
-    border: 1px solid red;
 
     &__reset {
       width: 7.5rem;
@@ -31,7 +30,6 @@
       display: flex;
       justify-content: space-evenly;
       cursor: pointer;
-      border: 1px solid green;
     }
   }
   .icon-reset:before {
@@ -39,7 +37,6 @@
     font-family: "FontAwesome";
     color: $colorDarkGrey;
     font-size: 1.2rem;
-    border: 1px solid blue;
   }
   &__card {
     width: 24rem;
