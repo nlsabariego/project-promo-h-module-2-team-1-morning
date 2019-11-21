@@ -1,0 +1,12 @@
+'use strict';
+
+///¿PODRÍAMOS METER HREF COMO VARIABLES Y LUEGO SUMARLE EL VALOR DEL INPUT?
+//PORQUE DEL OTRO MODO LO AÑADE SI ESCRIBIMOS MÁS DE LA CUENTA
+
+//const linkedin=(https//ww../)
+
+
+
+
+ 
+
