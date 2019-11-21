@@ -26,8 +26,9 @@
 
   &__title {
     @include CardTitle;
-    padding: 1rem 1.6rem 1rem 3.1rem;
+    padding: 1rem 0 1rem 3.1rem;
     width: 100%;
+    cursor: pointer;
   }
 
   &__label {

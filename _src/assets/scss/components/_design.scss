@@ -1,15 +1,5 @@
 .design-container {
-  border: solid red 5px;
-  //margin: 0 2rem;
-
-  &__hover {
-    border: 1px solid greenyellow;
-    position: relative;
-  }
-
-  &__hover:hover {
-    background: $colorLightGrey;
-  }
+  padding: 0 2rem;
 
   @media all and (min-width: 768px) {
     padding: 0;
@@ -27,18 +17,13 @@
 
 .design {
   &__header {
-    border: solid blue 2px;
     display: flex;
-    //position: relative;
-    // padding: 1rem 1.6rem 1rem 3.1rem;
-    //padding: 2.7rem 1.6rem 1rem 3.1rem;
-    margin: 2rem;
-    // margin-bottom: 2.2rem;
+    position: relative;
+    padding: 2.7rem 0 1rem 3.1rem;
+    cursor: pointer;
 
     &--title {
-      border: solid 3px;
       @include CardTitle;
-      padding-left: 3rem;
     }
   }
 
@@ -57,28 +42,17 @@
       margin-top: 2rem;
       font-weight: 400;
     }
-
-    // &--radio {
-    //   padding-top: 1rem;
-    //   border: 2px solid red;
-    // }
   }
 }
 
 .form__palette {
-  // border: solid #fabada 2px;
   display: flex;
   flex-direction: column;
-
-  // position: relative;
-  // left: 8.2rem;
-
   margin-bottom: 3rem;
 
   &--1,
   &--2,
   &--3 {
-    // border: solid 2px red;
     display: flex;
     flex-direction: row;
     margin-top: 2rem;
@@ -89,7 +63,6 @@
   display: inherit;
 }
 .palette-color {
-  // border: solid 2px;
   display: flex;
   flex-direction: row;
   align-content: space-between;
@@ -153,8 +126,10 @@
   display: none;
 }
 
-.js-collapsable-open .arrow:after {
- 
+.js-collapsable-open {
+}
+.js-collapsable-open .arrow::after {
+  transform: rotate(-180deg);
 }
 .js-collapsable-open .js-collapsable--content {
   display: flex;
