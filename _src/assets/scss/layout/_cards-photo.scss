@@ -5,143 +5,140 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  border: 3px solid red;
+  // border: 3px solid red;
   padding: 3.8rem 3.5rem 4rem 4.5rem;
-
-    @media all and (min-width: 768px){
-      padding: 17.7rem 4.4rem 26rem 4.5rem;
-    }
-    &__button {
-      width: 24rem;
-      display: flex;
-      justify-content: flex-start;
+  @media all and (min-width: 768px) {
+    padding: 17.7rem 4.4rem 26rem 4.5rem;
+    grid-area: 1 / 2 / 4 / 3;
+    margin: 2rem 4rem 2rem 3rem;
+  }
+  &__button {
+    width: 24rem;
+    display: flex;
+    justify-content: flex-start;
     
     &__reset {
       width: 7.5rem;
       height: 3rem;
       border-radius: 1.5rem;
       border: 1px solid $colorWhite;
-      background:transparent;
+      background: transparent;
       font-family: $fontFamily;
       font-size: 1.2rem;
       color: $colorDarkGrey;
       text-transform: uppercase;
       display: flex;
       justify-content: space-evenly;
+      cursor: pointer;
     }
-    }
-      .icon-reset:before {
-        content: "\f2ed";
-        font-family: "FontAwesome";
-        color: $colorDarkGrey;
-        font-size: 1.2rem;
-      }
-    
+  }
+  .icon-reset:before {
+    content: "\f2ed";
+    font-family: "FontAwesome";
+    color: $colorDarkGrey;
+    font-size: 1.2rem;
+  }
   &__card {
-      width: 24rem;
-      min-height: 33rem;
+    width: 24rem;
+    min-height: 33rem;
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    border-radius: 0.2rem;
+    box-shadow: 0 1px 10px 0 $colorBlack, 0 1px 3px 0 rgba(78, 78, 78, 0.35);
+    padding-top: 2.1rem;
+    background: $colorWhite;
+    &__info {
+      // border: springgreen solid 1px;
       display: flex;
       flex-direction: column;
-      margin-top: 2rem;
-      // border: 3px solid yellowgreen;
-      padding-top: 2.1rem;
-      background: $colorWhite;
-
-    &__info {
-        border: springgreen solid 1px;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        padding-left: 1.5rem;
-        margin-bottom: 1rem;
-        border-left: 0.5rem $colorBlue solid;
-        
+      align-items: flex-start;
+      padding-left: 1.5rem;
+      margin-bottom: 1rem;
+      border-left: 0.5rem $colorBlue solid;
       &__name {
-          width: 20.6rem;
-          font-family: $fontFamilyPhoto;
-          font-size: $fontSiePhotoTitle;
-          font-weight: bold;
-          color: $colorDarkGreenBlue;
-          line-height: 2rem;
-        }
+        width: 20.6rem;
+        font-family: $fontFamilyPhoto;
+        font-size: $fontSizePhotoTitle;
+        font-weight: 700;
+        color: $colorDarkGreenBlue;
+        line-height: 2rem;
+      }
       &__job {
-          width: 16.8rem;
-          line-height: 2rem;
-          font-family: $fontFamilyPhoto;
-          font-size: $fontSizePhotoText;
-          color: $colorGrey;
-        }
+        width: 16.8rem;
+        line-height: 2rem;
+        font-family: $fontFamilyPhoto;
+        font-weight: 400;
+        font-size: $fontSizePhotoText;
+        color: $colorGrey;
+      }
     }
     &__image {
-      border: blue solid 1px;
+      // border: blue solid 1px;
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover;
-      }
+    }
     &__links {
-        height: 5.4rem;
-        border: solid 2px violet;
+      // height: 5.4rem;
+      // border: solid 2px violet;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 6.2rem 1.2rem 2rem;
+      &__items {
+        border: 2px solid $colorGreen;
+        width: 3.2rem;
+        // height: 3.2rem;
+        border-radius: 1.6rem;
+      }
+      .icon-tel:before {
+        content: "\f3cd";
+        font-family: "FontAwesome";
+        color: $colorDarkGreenBlue;
+        font-size: 1.8rem;
+        margin: 0.5rem;
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
-        padding: 1rem 6.2rem 1.2rem 2rem;
-
-        &__items {
-          border: 2px solid #a2deaf;
-          width: 3.2rem;
-          height: 3.2rem;
-          border-radius: 1.6rem;
-        }
-
-        .icon-tel:before {
-          content: "\f3cd";
-          font-family: "FontAwesome";
-          color: $colorDarkGreenBlue;
-          font-size: 1.8rem;
-          margin: 0.5rem;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          cursor: pointer;
-        }
-        .icon-mail:before{
-          content: "\f0e0";
-          font-family: "FontAwesome";
-          color: $colorDarkGreenBlue;
-          font-size: 1.8rem;
-          padding: 0.5rem;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          cursor: pointer;
-        }
-        .icon-linkedin:before {
-          content: "\f0e1";
-          font-family: "FontAwesome";
-          color: $colorDarkGreenBlue;
-          font-size: 1.8rem;
-          padding: 0.5rem;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          cursor: pointer;
-
-        }
-        .icon-github:before {
-          content: "\f113";
-          font-family: "FontAwesome";
-          color: $colorDarkGreenBlue;
-          font-size: 1.8rem;
-          padding: 0.5rem;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          cursor: pointer;
-        }
-       }
-      
+        cursor: pointer;
+      }
+      .icon-mail:before {
+        content: "\f0e0";
+        font-family: "FontAwesome";
+        color: $colorDarkGreenBlue;
+        font-size: 1.8rem;
+        padding: 0.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+      }
+      .icon-linkedin:before {
+        content: "\f0e1";
+        font-family: "FontAwesome";
+        color: $colorDarkGreenBlue;
+        font-size: 1.8rem;
+        padding: 0.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+      }
+      .icon-github:before {
+        content: "\f113";
+        font-family: "FontAwesome";
+        color: $colorDarkGreenBlue;
+        font-size: 1.8rem;
+        padding: 0.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
       }
     }
   
 
+.js-items--filter {
+  filter: grayscale(100%);
+}

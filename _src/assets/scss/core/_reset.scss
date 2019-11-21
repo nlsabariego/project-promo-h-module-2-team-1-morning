@@ -8,6 +8,7 @@
 /* 1rem = 10px */
 html {
   font-size: 62.5%;
+  width: 100%;
 }
 
 fieldset {
@@ -15,4 +16,8 @@ fieldset {
   padding: 0;
   margin: 0;
   min-width: 0;
+}
+
+ul {
+  padding-inline-start: 0;
 }

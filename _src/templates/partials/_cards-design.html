@@ -1,42 +1,53 @@
-<section class="design-container">
-  <div class="design__header icons-1 icons-up">
-    <!-- <i class="far fa-object-ungroup"></i> -->
-    <h4 class="design__header--title">diseña</h4>
-    <!-- <i class="fas fa-chevron-up"></i> -->
-    <!-- <i class="fas fa-chevron-down"></i> -->
+<section class="design-container js-collapsable js-collapsable-open">
+  <div class="design-container__hover">
+    <div class="design__header js-collapsable--trigger">
+      <h4 class="design__header--title icons-1 arrow ">diseña</h4>
+    </div>
   </div>
-  <div class="design__form">
+  <div class="design__form js-collapsable--content">
     <h5 class="design__form--title">colores</h5>
     <form class="form__palette">
-      <div class="form__palette1">
-        <label for="">
-          <input type="radio" name="palette1" id="form-palette1" />
-          <ul class="palette-color">
-            <li class="palette-color__1"></li>
-            <li class="palette-color__2"></li>
-            <li class="palette-color__3"></li>
-          </ul>
-        </label>
+      <div class="form__palette--1">
+        <label class="x1" for=""></label>
+        <input
+          type="radio"
+          name="palette"
+          id="form-palette1"
+          class="design__form--radio js-form-palette1"
+        />
+        <ul class="palette-color">
+          <li class="palette-color__1"></li>
+          <li class="palette-color__2"></li>
+          <li class="palette-color__3"></li>
+        </ul>
       </div>
-      <div class="form__palette2">
-        <label for="">
-          <input type="radio" name="palette2" id="form-palette2" />
-          <ul class="palette-color">
-            <li class="palette-color__4"></li>
-            <li class="palette-color__5"></li>
-            <li class="palette-color__6"></li>
-          </ul>
-        </label>
+      <div class="form__palette--2">
+        <label class="x1" for=""> </label>
+        <input
+          type="radio"
+          name="palette"
+          id="form-palette2"
+          class="design__form--radio js-form-palette2"
+        />
+        <ul class="palette-color">
+          <li class="palette-color__4"></li>
+          <li class="palette-color__5"></li>
+          <li class="palette-color__6"></li>
+        </ul>
       </div>
-      <div class="form__palette3">
-        <label for="">
-          <input type="radio" name="palette3" id="form-palette3" />
-          <ul class="palette-color">
-            <li class="palette-color__7"></li>
-            <li class="palette-color__8"></li>
-            <li class="palette-color__9"></li>
-          </ul>
-        </label>
+      <div class="form__palette--3">
+        <label class="x1" for=""></label>
+        <input
+          type="radio"
+          name="palette"
+          id="form-palette3"
+          class="design__form--radio js-form-palette3"
+        />
+        <ul class="palette-color">
+          <li class="palette-color__7"></li>
+          <li class="palette-color__8"></li>
+          <li class="palette-color__9"></li>
+        </ul>
       </div>
     </form>
   </div>

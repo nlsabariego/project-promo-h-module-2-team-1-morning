@@ -18,11 +18,28 @@
 
 @mixin CardsIcons {
   position: absolute;
-  left: 0;
+  left: 2rem;
   font-weight: 400;
   font-family: "Font Awesome 5 Pro";
   font-size: 2rem;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
   color: $colorOrange;
+}
+
+@mixin CardsIconShare {
+  position: absolute;
+  content: "\f1e0";
+  font-family: "FontAwesome";
+  color: $colorOrange;
+  font-size: 2.24rem;
+}
+
+@mixin CardsArrow {
+  content: "\f078";
+  position: absolute;
+  right: 2rem;
+  font-weight: 600;
+  font-family: "Font Awesome 5 Pro";
+  font-size: 2rem;
+  color: $colorDarkGrey;
+  transform: rotate(180deg);
 }

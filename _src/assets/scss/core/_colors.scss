@@ -1,0 +1,50 @@
+//Palette 1 - por defecto
+
+.js-card-palette1 {
+  .js-card-name {
+    color: $colorDarkGreenBlue;
+  }
+  .js-border-info {
+    border-left: 0.5rem $colorBlue solid;
+  }
+  .js-tel,
+  .js-email,
+  .js-linkedin,
+  .js-github {
+    border: 2px solid $colorGreen;
+  }
+}
+
+//Palette 2
+
+.js-card-palette2 {
+  .js-card-name {
+    color: $colorDriedBlood;
+  }
+  .js-border-info {
+    border-left: 0.5rem $colorRustyRed solid;
+  }
+  .js-tel,
+  .js-email,
+  .js-linkedin,
+  .js-github {
+    border: 2px solid $colorTomato;
+  }
+}
+
+//Palette 3
+
+.js-card-palette3 {
+  .js-card-name {
+    color: $colorSlate;
+  }
+  .js-border-info {
+    border-left: 0.5rem $colorFadedOrange solid;
+  }
+  .js-tel,
+  .js-email,
+  .js-linkedin,
+  .js-github {
+    border: 2px solid $colorLightGreyBlue;
+  }
+}

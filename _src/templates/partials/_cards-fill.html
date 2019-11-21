@@ -1,13 +1,15 @@
-<section class="cards__form">
+<section class="container-fill js-collapsable">
   <form action="" method="">
     <fieldset class="form-fill">
-      <div class="form-fill__group--title icons-2">
-        <h4 class="form-fill__title">rellena</h4>
+      <div
+        class="form-fill__group--title icons-2 arrow js-collapsable--trigger"
+      >
+        <h4 class="form-fill__title">Rellena</h4>
       </div>
       <div class="form-fill__group--input">
         <label class="form-fill__label" for="form-name">Nombre completo</label>
         <input
-          class="form-fill__input"
+          class="form-fill__input js-form-name"
           type="text"
           id="form-name"
           name="name"
@@ -18,7 +20,7 @@
       <div class="form-fill__group--input">
         <label class="form-fill__label" for="form-job">Puesto</label>
         <input
-          class="form-fill__input"
+          class="form-fill__input js-form-job"
           type="text"
           id="form-job"
           name="job"
@@ -30,30 +32,19 @@
         <label class="form-fill__label" for="form-photo"
           >Imagen de perfil</label
         >
-        <input
+        <!-- <input
           class="form-fill__input"
           type="file"
           id="form-photo"
           name="photo"
           required
-        />
-        <button class="form-fill__button-image">Añadir imagen</button>
-      </div>
-      <div class="form-fill__group--input">
-        <label class="form-fill__label" for="form-email">Email</label>
-        <input
-          class="form-fill__input"
-          type="email"
-          id="form-email"
-          name="email"
-          placeholder="Ej: sally.hill@gmail.com"
-          required
-        />
+        /> -->
+        <button class="form-fill__button-image" title="Selecciona tu foto">Añadir imagen</button>
       </div>
       <div class="form-fill__group--input">
         <label class="form-fill__label" for="form-phone">Teléfono</label>
         <input
-          class="form-fill__input"
+          class="form-fill__input js-form-tel"
           type="tel"
           id="form-phone"
           name="phone"
@@ -62,9 +53,20 @@
         />
       </div>
       <div class="form-fill__group--input">
+        <label class="form-fill__label" for="form-email">Email</label>
+        <input
+          class="form-fill__input js-form-email"
+          type="email"
+          id="form-email"
+          name="email"
+          placeholder="Ej: sally.hill@gmail.com"
+          required
+        />
+      </div>
+      <div class="form-fill__group--input">
         <label class="form-fill__label" for="form-linkedin">Linkedin</label>
         <input
-          class="form-fill__input"
+          class="form-fill__input js-form-linkedin"
           type="text"
           id="form-linkedin"
           name="linkedin"
@@ -75,7 +77,7 @@
       <div class="form-fill__group--input">
         <label class="form-fill__label" for="form-github">Github</label>
         <input
-          class="form-fill__input"
+          class="form-fill__input js-form-github"
           type="text"
           id="form-github"
           name="github"

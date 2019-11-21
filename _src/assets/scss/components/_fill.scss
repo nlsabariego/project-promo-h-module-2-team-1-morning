@@ -1,5 +1,9 @@
-.cards__form {
-  margin: 0 2rem;
+.container-fill {
+  padding: 0 2rem;
+
+  @media all and (min-width: 768px) {
+    padding: 0;
+  }
 }
 
 .form-fill {
@@ -11,9 +15,13 @@
     align-items: center;
     position: relative;
   }
-  .icons-2::before {
+  .icons-2:before {
     content: "\f11c";
     @include CardsIcons;
+  }
+
+  .arrow:after {
+    @include CardsArrow;
   }
 
   &__title {
@@ -43,5 +51,6 @@
     border-radius: 0.3rem;
     font-family: $fontFamily;
     color: $colorWhite;
+    cursor: pointer;
   }
 }

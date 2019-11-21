@@ -1,1 +1,9 @@
-
+.cards {
+  @media all and (min-width: 768px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    background: $colorLightGrey;
+    padding-left: 4rem;
+  }
+}
