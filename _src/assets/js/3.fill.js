@@ -18,6 +18,8 @@ function resetButtonHandler() {
   const formDesign = document.querySelector("#js-form-design");
   formFill.reset();
   formDesign.reset();
+  nameData();
+  jobData();
 }
 
 resetButton.addEventListener("click", resetButtonHandler);
