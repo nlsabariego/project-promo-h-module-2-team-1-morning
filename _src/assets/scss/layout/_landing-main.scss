@@ -98,17 +98,17 @@
   font-family: "FontAwesome";
   color: $colorOrange;
   font-size: 2.24rem;
-  @media all and (min-width:768px) {
-  font-size: 2.8rem;
- }
+  @media all and (min-width: 768px) {
+    font-size: 2.8rem;
+  }
 }
 .icon-land-fill:before {
   content: "\f11c";
   font-family: "FontAwesome";
   color: $colorOrange;
   font-size: 2.24rem;
-  @media all and (min-width:768px) {
-  font-size: 2.8rem;
+  @media all and (min-width: 768px) {
+    font-size: 2.8rem;
   }
 }
 
@@ -117,8 +117,8 @@
   font-family: "FontAwesome";
   color: $colorOrange;
   font-size: 2.24rem;
-  @media all and (min-width:768px) {
-  font-size: 2.8rem;
+  @media all and (min-width: 768px) {
+    font-size: 2.8rem;
   }
 }
 
