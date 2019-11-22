@@ -42,5 +42,5 @@
   font-family: "Font Awesome 5 Pro";
   font-size: 2rem;
   color: $colorDarkGrey;
-  // transform: rotate(180deg);
+  transition: transform ease 0.6s;
 }
