@@ -28,23 +28,25 @@
           placeholder="Ej:Front-end unicorn"
           required
         />
-        <!-- </div>
-        <div class="form-fill__group--input"> -->
-        <label class="form-fill__label" for="form-photo"
-          >Imagen de perfil</label
-        >
-        <input
-          class="form-fill__input"
-          type="file"
-          id="form-photo"
-          name="photo"
-          required
-        />
-        <button class="form-fill__button-image" title="Selecciona tu foto">
-          Añadir imagen
-        </button>
-        <!-- </div>
-        <div class="form-fill__group--input"> -->
+        <div class="form-fill__group-photo">
+          <label class="form-fill__label" for="form-photo"
+            >Imagen de perfil</label
+          >
+          <input
+            class="form-fill__input hidden"
+            type="file"
+            id="form-photo"
+            name="photo"
+            required
+          />
+          <button
+            class="form-fill__group-photo--button"
+            title="Selecciona tu foto"
+          >
+            Añadir imagen
+          </button>
+          <div class="form-fill__group-photo--preview"></div>
+        </div>
         <label class="form-fill__label" for="form-phone">Teléfono</label>
         <input
           class="form-fill__input js-form-tel"

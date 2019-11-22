@@ -53,14 +53,31 @@
     }
   }
 
-  &__button-image {
-    background: $colorOrange;
-    border: none;
-    width: 14rem;
-    height: 3rem;
-    border-radius: 0.3rem;
-    font-family: $fontFamily;
-    color: $colorWhite;
-    cursor: pointer;
+  &__group-photo {
+    display: inline-block;
+    position: relative;
+
+    &--button {
+      background: $colorOrange;
+      border: none;
+      width: 14rem;
+      height: 3rem;
+      border-radius: 0.3rem;
+      font-family: $fontFamily;
+      color: $colorWhite;
+      cursor: pointer;
+    }
+    &--preview {
+      display: inline-block;
+      width: 3rem;
+      height: 3rem;
+      border: solid 0.1rem $colorGreen;
+      margin-left: 2rem;
+      position: absolute;
+    }
   }
+}
+
+.hidden {
+  display: none;
 }
