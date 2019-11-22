@@ -4,13 +4,14 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: 3rem;
+
+  @media all and (min-width: 768px) {
+    padding: 0;
+  }
 }
 .icons-3:before {
   @include CardsIconShare;
-
-  @media all and (min-width: 768px) {
-    transform: translateX(-20px);
-  }
 }
 
 .arrow:after {
@@ -27,11 +28,6 @@
   }
   &__title {
     @include CardTitle;
-    padding: 0 0 10px 30px;
-
-    @media all and (min-width: 768px) {
-      padding-left: 10px;
-    }
   }
 
   &__button-create {
@@ -54,7 +50,7 @@
 }
 .icon-card:before {
   content: "\f2bb";
-  font-family: FontAwesome;
+  font-family: "FontAwesome";
   margin-right: 0.9rem;
 }
 .share__notification {
@@ -63,8 +59,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border-top: #d8d8d8 solid 0.1rem;
-  border-bottom: #d8d8d8 solid 0.1rem;
+  border-top: $colorBorderTop solid 0.1rem;
   margin-bottom: 3rem;
 }
 .notification__title {
