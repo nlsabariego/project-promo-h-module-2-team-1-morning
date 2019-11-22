@@ -7,8 +7,6 @@
 }
 
 .form-fill {
-  width: 100%;
-
   &__group--title {
     display: flex;
     flex-direction: row;
@@ -30,6 +28,11 @@
     padding: 1rem 0 1rem 3.1rem;
     width: 100%;
     cursor: pointer;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
   }
 
   &__label {
