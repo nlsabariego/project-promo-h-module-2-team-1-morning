@@ -27,6 +27,7 @@
 
 @mixin CardsIconShare {
   position: absolute;
+  left: 0;
   content: "\f1e0";
   font-family: "FontAwesome";
   color: $colorOrange;
