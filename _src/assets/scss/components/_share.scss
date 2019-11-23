@@ -1,16 +1,16 @@
 .share__container {
-  padding: 1rem 2rem 0rem 2rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 0 2rem;
+
+  @media all and (min-width: 768px) {
+    padding: 0;
+  }
 }
 .icons-3:before {
   @include CardsIconShare;
-
-  @media all and (min-width: 768px) {
-    transform: translateX(-20px);
-  }
 }
 
 .arrow:after {
@@ -21,17 +21,13 @@
     width: 100%;
     display: flex;
     position: relative;
-    padding-top: 1rem;
-    margin-top: 3rem;
+    padding: 1rem 0 1rem 3.1rem;
+    // margin-top: 3rem;
     cursor: pointer;
+    border-top: $colorBorderTop solid 0.1rem;
   }
   &__title {
     @include CardTitle;
-    padding: 0 0 10px 30px;
-
-    @media all and (min-width: 768px) {
-      padding-left: 10px;
-    }
   }
 
   &__card {
@@ -62,7 +58,7 @@
 }
 .icon-card:before {
   content: "\f2bb";
-  font-family: FontAwesome;
+  font-family: "FontAwesome";
   margin-right: 0.9rem;
 }
 .share__notification {
@@ -71,8 +67,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border-top: #d8d8d8 solid 0.1rem;
-  border-bottom: #d8d8d8 solid 0.1rem;
+  border-top: $colorBorderTop solid 0.1rem;
+  border-bottom: $colorBorderTop solid 0.1rem;
   margin-bottom: 3rem;
 }
 .notification__title {

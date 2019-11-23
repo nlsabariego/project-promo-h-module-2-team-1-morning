@@ -7,20 +7,19 @@
 }
 
 .form-fill {
-  width: 100%;
-
   &__group--title {
     display: flex;
     flex-direction: row;
     align-items: center;
     position: relative;
+    border-top: $colorBorderTop solid 0.1rem;
   }
-  .icons-2:before {
+  .icons-2::before {
     content: "\f11c";
     @include CardsIcons;
   }
 
-  .arrow:after {
+  .arrow::after {
     @include CardsArrow;
   }
 
@@ -29,6 +28,12 @@
     padding: 1rem 0 1rem 3.1rem;
     width: 100%;
     cursor: pointer;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3rem;
   }
 
   &__label {
@@ -42,16 +47,37 @@
     height: 3rem;
     width: 100%;
     display: block;
+
+    &::placeholder {
+      padding: 0.5rem;
+    }
   }
 
-  &__button-image {
-    background: $colorOrange;
-    border: none;
-    width: 14rem;
-    height: 3rem;
-    border-radius: 0.3rem;
-    font-family: $fontFamily;
-    color: $colorWhite;
-    cursor: pointer;
+  &__group-photo {
+    display: inline-block;
+    position: relative;
+
+    &--button {
+      background: $colorOrange;
+      border: none;
+      width: 14rem;
+      height: 3rem;
+      border-radius: 0.3rem;
+      font-family: $fontFamily;
+      color: $colorWhite;
+      cursor: pointer;
+    }
+    &--preview {
+      display: inline-block;
+      width: 3rem;
+      height: 3rem;
+      border: solid 0.1rem $colorGreen;
+      margin-left: 2rem;
+      position: absolute;
+    }
   }
+}
+
+.hidden {
+  display: none;
 }
