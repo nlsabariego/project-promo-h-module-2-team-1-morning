@@ -41,6 +41,10 @@
       margin-top: 2rem;
       font-weight: 400;
     }
+
+    &--radio {
+      cursor: pointer;
+    }
   }
 }
 
@@ -67,8 +71,6 @@
   flex-direction: row;
   align-content: space-between;
   margin-left: 1rem;
-  cursor: pointer;
-
   width: 9rem;
   height: 2.5rem;
 
