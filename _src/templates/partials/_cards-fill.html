@@ -15,6 +15,9 @@
           id="form-name"
           name="name"
           placeholder="Ej:Sally Jill"
+          maxlenght="15"
+          pattern="[A-Za-z]{2,15}"
+          title="Introduce entre 2 y 15 letras"
           required
         />
         <!-- </div> -->
@@ -26,6 +29,9 @@
           id="form-job"
           name="job"
           placeholder="Ej:Front-end unicorn"
+          maxlenght="15"
+          pattern="[A-Za-z]{2,15}"
+          title="Introduce entre 2 y 15 letras"
           required
         />
         <div class="form-fill__group-photo">
@@ -54,6 +60,8 @@
           id="form-phone"
           name="phone"
           placeholder="Ej: 555-55-55-55"
+          pattern="[0-9]{9}"
+          title="Número de 9 cifras"
           required
         />
         <!-- </div>
