@@ -20,6 +20,7 @@ function resetButtonHandler() {
   formDesign.reset();
   nameData();
   jobData();
+  paintPalette1();
 }
 
 resetButton.addEventListener("click", resetButtonHandler);
