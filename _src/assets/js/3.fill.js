@@ -1,3 +1,4 @@
+"use strict";
 //NOMBRE Y PROFESIÓN
 
 //constantes para nombre y profesión
@@ -20,7 +21,13 @@ function resetButtonHandler() {
   formDesign.reset();
   nameData();
   jobData();
-  paintPalette1();
+  paintPalette(1);
+}
+
+function doAll() {
+  nameData();
+  jobData();
+  paintPalette();
 }
 
 resetButton.addEventListener("click", resetButtonHandler);
@@ -48,8 +55,8 @@ function jobData() {
 
 //función listeners para pintar nombre y profesión
 
-inputNameElement.addEventListener("keyup", nameData);
-inputJobElement.addEventListener("keyup", jobData);
+inputNameElement.addEventListener("keyup", doAll);
+inputJobElement.addEventListener("keyup", doAll);
 
 //ICONOS
 
