@@ -24,10 +24,23 @@ function resetButtonHandler() {
   paintPalette(1);
 }
 
+//Función para cambiar de color el botón de share
+const shareButton = document.querySelector(".js-share-button");
+function checkForm() {
+  if (form.checkValidity() === true) {
+    shareButton.classList.remove("js-items--filter");
+  }
+}
+
+//Función handler que reparte
+
+const form = document.querySelector(".js-form");
+
 function doAll() {
   nameData();
   jobData();
   paintPalette();
+  checkForm();
 }
 
 resetButton.addEventListener("click", resetButtonHandler);
