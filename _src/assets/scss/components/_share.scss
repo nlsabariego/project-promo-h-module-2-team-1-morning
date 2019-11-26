@@ -116,3 +116,10 @@
 .js-collapsable-open .js-collapsable--content {
   display: flex;
 }
+.js-button--filter {
+  filter: grayscale(100%);
+}
+
+.js-share--url {
+  display: none;
+}
