@@ -74,10 +74,12 @@
       border: solid 0.1rem $colorGreen;
       margin-left: 2rem;
       position: absolute;
+      background-position: center;
+      background-size: cover;
     }
   }
 }
 
-// .hidden {
-//   display: none;
-// }
+.hidden {
+  display: none;
+}

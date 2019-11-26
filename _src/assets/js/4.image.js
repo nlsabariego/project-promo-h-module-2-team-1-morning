@@ -1,4 +1,5 @@
 'use strict';
+
 const fr = new FileReader(); //Creamos un nuevo objeto que llamaremos más adelante con la constant fr
 
 //Elementos del DOM que necesitaremos
