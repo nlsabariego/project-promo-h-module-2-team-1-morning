@@ -11,43 +11,6 @@ const inputNameElement = document.querySelector('.js-form-name');
 const cardJobElement = document.querySelector('.js-card-job');
 const inputJobElement = document.querySelector('.js-form-job');
 
-//constante para el botón reset
-
-const resetButton = document.querySelector('.js-reset-button');
-
-function resetButtonHandler() {
-  const formFill = document.querySelector('#js-form-fill');
-  const formDesign = document.querySelector('#js-form-design');
-  formFill.reset();
-  formDesign.reset();
-  nameData();
-  jobData();
-  paintPalette(1);
-}
-
-//Función para cambiar de color el botón de share
-const shareButton = document.querySelector('.js-share-button');
-const form = document.querySelector('.js-form');
-function checkForm() {
-  if (form.checkValidity() === true) {
-    shareButton.classList.remove('js-button--filter');
-  } else {
-    shareButton.classList.add('js-button--filter');
-  }
-}
-
-//Función handler que reparte
-
-function doAll() {
-  paintPalette();
-  nameData();
-  jobData();
-  formIcon();
-  checkForm();
-}
-
-resetButton.addEventListener('click', resetButtonHandler);
-
 //función handler pintar nombre
 
 function nameData() {
@@ -73,6 +36,26 @@ function jobData() {
 
 inputNameElement.addEventListener('keyup', doAll);
 inputJobElement.addEventListener('keyup', doAll);
+
+//BOTÓN RESET
+
+//constante para el botón reset
+
+const resetButton = document.querySelector('.js-reset-button');
+
+//función handler reset
+function resetButtonHandler() {
+  const formFill = document.querySelector('#js-form-fill');
+  const formDesign = document.querySelector('#js-form-design');
+  formFill.reset();
+  formDesign.reset();
+  nameData();
+  jobData();
+  paintPalette(1);
+}
+
+//función listener reset
+resetButton.addEventListener('click', resetButtonHandler);
 
 //ICONOS
 
@@ -100,12 +83,11 @@ const iconTel = document.querySelector('.js-tel');
 function formIcon() {
   //función enlazar los links
   const linkedinValue = inputLinkedinElement.value;
-  //linkedin.href=linkedin+linkedinValue; ANA?? ver Main
-  linkedin.href += linkedinValue;
+  linkedin.href = `https://www.linkedin.com/in/${linkedinValue}`;
   const githubValue = inputGithubElement.value;
-  github.href += githubValue;
+  github.href = `https://github.com/${githubValue}`;
   const emailValue = inputEmailElement.value;
-  email.href += emailValue;
+  email.href = `mailto:${emailValue}`;
   const telValue = inputTelElement.value;
   tel.href = telValue;
 
@@ -141,3 +123,13 @@ inputLinkedinElement.addEventListener('keyup', doAll);
 inputGithubElement.addEventListener('keyup', doAll);
 inputEmailElement.addEventListener('keyup', doAll);
 inputTelElement.addEventListener('keyup', doAll);
+
+//FUNICIÓN SUPER REPARTIDORA
+
+function doAll() {
+  paintPalette();
+  nameData();
+  jobData();
+  formIcon();
+  checkForm();
+}
