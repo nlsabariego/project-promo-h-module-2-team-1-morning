@@ -8,10 +8,12 @@ const uploadBtn = document.querySelector('.js-uploadBtn'); //botón añadir
 const fileField = document.querySelector('.js-file-input'); // input imagen
 const profileImage = document.querySelector('.js-image-profile'); //foto perfil de la card
 const profilePreview = document.querySelector('.js-preview'); //preview
+// const defaultImage = profileImage.style.backgroundImage =
 
 // Con esta función gestionamos todo lo relativo a cargar/leer la imagen
 function getImage(e) {
   // almacenamos en la constante myFile el primer archivo que cargamos desde nuestro pc
+  debugger;
   const myFile = e.currentTarget.files[0];
   // establecemos dos órdenes sobre el objeto file reader
   // 1º cuando se produzca el evento cargar en el fr, se ejecuta la función setImage (está definida y explicada más adelante)
@@ -29,7 +31,11 @@ function setImage() {
   previewImage();
 }
 function previewImage() {
-  if (picture !== '') {
+  if (picture === '') {
+    profileImage.style.backgroundImage =
+      'url(http://localhost:3000/assets/images/paquita.jpg)';
+    profilePreview.style.backgroundImage = 'url()';
+  } else {
     profileImage.style.backgroundImage = `url(${picture})`;
     profilePreview.style.backgroundImage = `url(${picture})`;
   }

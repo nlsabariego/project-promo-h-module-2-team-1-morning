@@ -49,9 +49,8 @@ function resetButtonHandler() {
   const formDesign = document.querySelector('#js-form-design');
   formFill.reset();
   formDesign.reset();
-  nameData();
-  jobData();
-  paintPalette(1);
+  picture = '';
+  doAll();
 }
 
 //función listener reset
@@ -132,4 +131,5 @@ function doAll() {
   jobData();
   formIcon();
   checkForm();
+  previewImage();
 }

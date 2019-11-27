@@ -27,6 +27,7 @@ const card = document.querySelector('.js-card');
 //   card.classList.remove('js-card-palette1');
 // }
 
+// eslint-disable-next-line no-unused-vars
 function paintPalette() {
   card.classList.remove('js-card-palette1');
   card.classList.remove('js-card-palette2');
