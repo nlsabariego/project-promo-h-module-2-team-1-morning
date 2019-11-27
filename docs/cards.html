@@ -22,7 +22,8 @@
             <main class="cards">
                 <section class="card-photo">
                     <div class="card-photo__button">
-                        <button type="button" class="card-photo__button__reset icon-reset" title="Reset">Reset</button>
+                        <button type="button" class="card-photo__button__reset icon-reset js-reset-button"
+                        title="Reset">Reset</button>
                     </div>
                     <div class="card-photo__card js-card js-card-palette1">
                         <div class="card-photo__card__info js-border-info">
@@ -31,144 +32,149 @@
       </h2>
 
                              <h3 class="card-photo__card__info__job js-card-job">
-        Front-end developer
+        Profesión
       </h3>
 
                         </div>
-                        <div>
-                            <img class="card-photo__card__image" src="./assets/images/background_240x200.png"
-                            alt="Avatar" title="Imagen del usuario" />
-                        </div>
+                        <div class="card-photo__card__image js-image-profile" alt="Avatar" title="Imagen del usuario"></div>
                         <div>
                             <ul class="card-photo__card__links">
-                                <li class="card-photo__card__links__items js-tel js-items--filter"> <a href="#" class="icon-tel js-card-tel" title="Teléfono"></a>
+                                <li class="card-photo__card__links__items js-tel js-items--filter"> <a href="#" class="icon-tel js-card-tel" title="Teléfono" target="_blank"></a>
 
                                 </li>
-                                <li class="card-photo__card__links__items js-email js-items--filter"> <a href="mailto:" class="icon-mail js-card-email" title="Email"></a>
+                                <li class="card-photo__card__links__items js-email js-items--filter"> <a href="#" class="icon-mail js-card-email" title="Email" target="_blank"></a>
 
                                 </li>
-                                <li class="card-photo__card__links__items js-linkedin js-items--filter"> <a href="http://www.linkedin.com/in/" class="icon-linkedin js-card-linkedin"
-                                    title="Linkedin"></a>
+                                <li class="card-photo__card__links__items js-linkedin js-items--filter"> <a href="#" class="icon-linkedin js-card-linkedin" title="Linkedin" target="_blank"></a>
 
                                 </li>
-                                <li class="card-photo__card__links__items js-github js-items--filter"> <a href="http://www.github.com/" class="icon-github js-card-github" title="GitHub"></a>
+                                <li class="card-photo__card__links__items js-github js-items--filter"> <a href="#" class="icon-github js-card-github" title="GitHub" target="_blank"></a>
 
                                 </li>
                             </ul>
                         </div>
                     </div>
                 </section>
-                <section class="design-container js-collapsable js-collapsable-open">
-                    <div class="design__header icons-1 arrow js-collapsable--trigger">
-                         <h4 class="design__header--title">diseña</h4>
+                <section>
+                    <section class="design-container js-collapsable js-collapsable-open">
+                        <div class="design__header icons-1 arrow js-collapsable--trigger">
+                             <h4 class="design__header--title">diseña</h4>
 
-                    </div>
-                    <div class="design__form js-collapsable--content">
-                         <h5 class="design__form--title">colores</h5>
+                        </div>
+                        <div class="design__form js-collapsable--content">
+                             <h5 class="design__form--title">colores</h5>
 
-                        <form class="form__palette">
-                            <div class="form__palette--1">
-                                <label class="x1" for=""></label>
-                                <input type="radio" name="palette" id="form-palette1" class="design__form--radio js-form-palette1"
-                                />
-                                <ul class="palette-color">
-                                    <li class="palette-color__1"></li>
-                                    <li class="palette-color__2"></li>
-                                    <li class="palette-color__3"></li>
-                                </ul>
-                            </div>
-                            <div class="form__palette--2">
-                                <label class="x1" for=""></label>
-                                <input type="radio" name="palette" id="form-palette2" class="design__form--radio js-form-palette2"
-                                />
-                                <ul class="palette-color">
-                                    <li class="palette-color__4"></li>
-                                    <li class="palette-color__5"></li>
-                                    <li class="palette-color__6"></li>
-                                </ul>
-                            </div>
-                            <div class="form__palette--3">
-                                <label class="x1" for=""></label>
-                                <input type="radio" name="palette" id="form-palette3" class="design__form--radio js-form-palette3"
-                                />
-                                <ul class="palette-color">
-                                    <li class="palette-color__7"></li>
-                                    <li class="palette-color__8"></li>
-                                    <li class="palette-color__9"></li>
-                                </ul>
-                            </div>
+                            <form class="form__palette" id="js-form-design">
+                                <div class="form__palette--1">
+                                    <label class="x1" for=""></label>
+                                    <input value="1" type="radio" name="palette" id="form-palette1"
+                                    class="design__form--radio js-form-palette1" checked="checked" />
+                                    <ul class="palette-color">
+                                        <li class="palette-color__1"></li>
+                                        <li class="palette-color__2"></li>
+                                        <li class="palette-color__3"></li>
+                                    </ul>
+                                </div>
+                                <div class="form__palette--2">
+                                    <label class="x1" for=""></label>
+                                    <input value="2" type="radio" name="palette" id="form-palette2"
+                                    class="design__form--radio js-form-palette2" />
+                                    <ul class="palette-color">
+                                        <li class="palette-color__4"></li>
+                                        <li class="palette-color__5"></li>
+                                        <li class="palette-color__6"></li>
+                                    </ul>
+                                </div>
+                                <div class="form__palette--3">
+                                    <label class="x1" for=""></label>
+                                    <input value="3" type="radio" name="palette" id="form-palette3"
+                                    class="design__form--radio js-form-palette3" />
+                                    <ul class="palette-color">
+                                        <li class="palette-color__7"></li>
+                                        <li class="palette-color__8"></li>
+                                        <li class="palette-color__9"></li>
+                                    </ul>
+                                </div>
+                            </form>
+                        </div>
+                    </section>
+                    <section class="container-fill js-collapsable">
+                        <form action="" method="" id="js-form-fill" class="js-form">
+                            <fieldset class="form-fill">
+                                <div class="form-fill__group--title icons-2 arrow js-collapsable--trigger">
+                                    <legend class="form-fill__title">Rellena</legend>
+                                </div>
+                                <div class="form-fill__content js-collapsable--content">
+                                    <!-- <div class="form-fill__group--input"> -->
+                                    <label class="form-fill__label" for="form-name">Nombre completo</label>
+                                    <input class="form-fill__input js-form-name" type="text"
+                                    id="form-name" name="name" placeholder="Ej:Paquita Salas" maxlenght="15"
+                                    pattern="[A-Za-z]{2,15}" title="Introduce entre 2 y 15 letras" required
+                                    />
+                                    <!-- </div> -->
+                                    <!-- <div class="form-fill__group--input"> -->
+                                    <label class="form-fill__label" for="form-job">Puesto</label>
+                                    <input class="form-fill__input js-form-job" type="text"
+                                    id="form-job" name="job" placeholder="Ej:Representante de artistas" maxlenght="30"
+                                    pattern="[A-Za-z]{2,15}" title="Introduce entre 2 y 30 letras" required
+                                    />
+                                    <div class="form-fill__group-photo">
+                                        <label class="form-fill__label" for="form-photo">Imagen de perfil</label>
+                                        <input class="form-fill__input hidden js-file-input"
+                                        type="file" id="form-photo" name="photo" />
+                                        <button class="form-fill__group-photo--button js-uploadBtn" title="Selecciona tu foto">Añadir imagen</button>
+                                        <div class="form-fill__group-photo--preview js-preview"></div>
+                                    </div>
+                                    <label class="form-fill__label" for="form-phone">Teléfono</label>
+                                    <input class="form-fill__input js-form-tel" type="tel"
+                                    id="form-phone" name="phone" placeholder="Ej: 555-55-55-55" pattern="[0-9]{9}"
+                                    title="Número de 9 cifras" required />
+                                    <!-- </div>
+        <div class="form-fill__group--input"> -->
+                                    <label class="form-fill__label" for="form-email">Email</label>
+                                    <input class="form-fill__input js-form-email" type="email"
+                                    id="form-email" name="email" placeholder="Ej: psmanagement@gmail.com" required
+                                    />
+                                    <!-- </div>
+        <div class="form-fill__group--input"> -->
+                                    <label class="form-fill__label" for="form-linkedin">Linkedin</label>
+                                    <input class="form-fill__input js-form-linkedin" type="text"
+                                    id="form-linkedin" name="linkedin" placeholder="Ej: paquitasalas" required
+                                    />
+                                    <!-- </div>
+        <div class="form-fill__group--input"> -->
+                                    <label class="form-fill__label" for="form-github">Github</label>
+                                    <input class="form-fill__input js-form-github" type="text"
+                                    id="form-github" name="github" placeholder="Ej: paquitasalas" required
+                                    />
+                                    <!-- </div> -->
+                                </div>
+                            </fieldset>
                         </form>
-                    </div>
-                </section>
-                <section class="container-fill js-collapsable">
-                    <form action="" method="">
-                        <fieldset class="form-fill">
-                            <div class="form-fill__group--title icons-2 arrow js-collapsable--trigger">
-                                 <h4 class="form-fill__title">Rellena</h4>
+                    </section>
+                    <section class="share__container js-collapsable">
+                        <div class="share__header icons-3 arrow js-collapsable--trigger">
+                             <h4 class="share__title">comparte</h4>
 
-                            </div>
-                            <div class="form-fill__group--input">
-                                <label class="form-fill__label" for="form-name">Nombre completo</label>
-                                <input class="form-fill__input js-form-name" type="text"
-                                id="form-name" name="name" placeholder="Ej:Sally Jill" required />
-                            </div>
-                            <div class="form-fill__group--input">
-                                <label class="form-fill__label" for="form-job">Puesto</label>
-                                <input class="form-fill__input js-form-job" type="text"
-                                id="form-job" name="job" placeholder="Ej:Front-end unicorn" required />
-                            </div>
-                            <div class="form-fill__group--input">
-                                <label class="form-fill__label" for="form-photo">Imagen de perfil</label>
-                                <!-- <input class="form-fill__input" type="file"
-                                id="form-photo" name="photo" required />-->
-                                <button class="form-fill__button-image" title="Selecciona tu foto">Añadir imagen</button>
-                            </div>
-                            <div class="form-fill__group--input">
-                                <label class="form-fill__label" for="form-phone">Teléfono</label>
-                                <input class="form-fill__input js-form-tel" type="tel"
-                                id="form-phone" name="phone" placeholder="Ej: 555-55-55-55" required />
-                            </div>
-                            <div class="form-fill__group--input">
-                                <label class="form-fill__label" for="form-email">Email</label>
-                                <input class="form-fill__input js-form-email" type="email"
-                                id="form-email" name="email" placeholder="Ej: sally.hill@gmail.com" required
-                                />
-                            </div>
-                            <div class="form-fill__group--input">
-                                <label class="form-fill__label" for="form-linkedin">Linkedin</label>
-                                <input class="form-fill__input js-form-linkedin" type="text"
-                                id="form-linkedin" name="linkedin" placeholder="Ej: @sally-hill" required
-                                />
-                            </div>
-                            <div class="form-fill__group--input">
-                                <label class="form-fill__label" for="form-github">Github</label>
-                                <input class="form-fill__input js-form-github" type="text"
-                                id="form-github" name="github" placeholder="Ej: @sally-hill" required />
-                            </div>
-                        </fieldset>
-                    </form>
-                </section>
-                <section class="share__container js-collapsable">
-                    <div class="share__header icons-3 arrow js-collapsable--trigger">
-                         <h4 class="share__title">comparte</h4>
-
-                    </div>
-                    <div class="js-collapsable--content">
-                        <button class="share__button-create icon-card" title="Crea tu tarjeta">
-                            </i>Crear tarjeta</button>
-                    </div>
-                    <div class="share__notification">
-                         <h5 class="notification__title">La tarjeta ha sido creada:</h4>
-    <a class="notification__link" href="" title="Comparte tu tarjeta con este link">www.algo.com</a>
-    <a class="notification__button-tw icon-tw" href="" title="Comparte tu tarjeta a través de twitter">Compartir en twitter</a>
+                        </div>
+                        <div class="share__card js-collapsable--content">
+                            <button class="share__card__button-create icon-card js-button--filter js-share-button"
+                            title="Crea tu tarjeta">
+                                </i>Crear tarjeta</button>
+                            <div class="share__notification js-share--url">
+                                 <h5 class="notification__title">La tarjeta ha sido creada:</h4>
+      <a class="notification__link" href="" title="Comparte tu tarjeta con este link">www.algo.com</a>
+      <a class="notification__button-tw icon-tw" href="" title="Comparte tu tarjeta a través de twitter">Compartir en twitter</a>
+    </div>
   </div>
 
 </section>
 
+  </section>
 </main>
 
       <footer class="footer">
-    <p class="footer__copy">Awesome profile-cards &copy;2018</p>
+    <p class="footer__copy">Awesome profile-cards &copy;2019</p>
     <img class="footer__logo" src="./assets/images/logo-adalab-awesome.png"
     alt="Logo Adalab" title="¡Volver arriba!" />
 </footer>
