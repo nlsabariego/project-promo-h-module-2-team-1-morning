@@ -1,5 +1,7 @@
 'use strict';
 
+const formFill = document.querySelector('#js-form-fill');
+
 //NOMBRE Y PROFESIÓN
 
 //constantes para nombre y profesión
@@ -45,7 +47,6 @@ const resetButton = document.querySelector('.js-reset-button');
 
 //función handler reset
 function resetButtonHandler() {
-  const formFill = document.querySelector('#js-form-fill');
   const formDesign = document.querySelector('#js-form-design');
   formFill.reset();
   formDesign.reset();
