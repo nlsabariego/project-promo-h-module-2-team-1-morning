@@ -7,7 +7,7 @@ const formFill = document.querySelector('#js-form-fill');
 //constantes para nombre y profesión
 
 const defaultName = 'Nombre Apellido';
-const defaultJob = 'Front-end developer';
+const defaultJob = 'Profesión';
 const cardNameElement = document.querySelector('.js-card-name');
 const inputNameElement = document.querySelector('.js-form-name');
 const cardJobElement = document.querySelector('.js-card-job');
