@@ -133,4 +133,5 @@ function doAll() {
   formIcon();
   checkForm();
   previewImage();
+  setToLocalStorage();
 }

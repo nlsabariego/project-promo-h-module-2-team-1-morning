@@ -2,14 +2,15 @@
 
 const formContainer = document.querySelector('.js-form');
 
-
-
-const handleDataInput = function () {
+const setToLocalStorage = function() {
+  debugger;
   console.log('aqui tecleo');
-  console.log('aqui cambio de input')
+  console.log('aqui cambio de input');
   //obtenemos solamente el input de tipo radio que está selecionado buscando por su nombre
   //y para buscar con querySelector una propiedad es con :checked
-  const inputPalleteChecked = document.querySelector('input[name="palette"]:checked');
+  const inputPalleteChecked = document.querySelector(
+    'input[name="palette"]:checked'
+  );
   const data = {
     name: inputNameElement.value,
     job: inputJobElement.value,
@@ -17,12 +18,13 @@ const handleDataInput = function () {
     github: inputGithubElement.value,
     email: inputEmailElement.value,
     tel: inputTelElement.value,
-    palette: inputPalleteChecked.value,
+    palette: parseInt(inputPalleteChecked.value),
+    photo: picture
   };
   localStorage.setItem('userData', JSON.stringify(data));
 };
 
-const getFromLocalStorage = function () {
+const getFromLocalStorage = function() {
   const userData = JSON.parse(localStorage.getItem('userData'));
   if (userData !== null) {
     inputNameElement.value = userData.name;
@@ -31,18 +33,21 @@ const getFromLocalStorage = function () {
     inputGithubElement.value = userData.github;
     inputEmailElement.value = userData.email;
     inputTelElement.value = userData.tel;
+    picture = userData.photo;
     //buscamos el radio que tiene el mismo valor que hemos guardado en la localStorage y
     //lo checkeamos (usamos checked como propiedad)
-    document.querySelector(`input[name="palette"][value="${userData.palette}"]`).checked = true;
+    document.querySelector(
+      `input[name="palette"][value="${userData.palette}"]`
+    ).checked = true;
   }
 };
 
 //duda Miguel?
 //entramos en el evento cuando levantamos la tecla
-window.addEventListener('keyup', handleDataInput);
+// window.addEventListener('keyup', handleDataInput);
 //entramos en el evento cuando cambiamos de campo por lo que los cambios
 //solo se guardan en la caché cuando cambiamos de input
-window.addEventListener('change', handleDataInput);
+// window.addEventListener('change', handleDataInput);
 
 getFromLocalStorage();
 doAll();
