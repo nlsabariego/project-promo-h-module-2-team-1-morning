@@ -2,10 +2,7 @@
 
 const formContainer = document.querySelector('.js-form');
 
-const setToLocalStorage = function() {
-  debugger;
-  console.log('aqui tecleo');
-  console.log('aqui cambio de input');
+const getDataObj = function() {
   //obtenemos solamente el input de tipo radio que está selecionado buscando por su nombre
   //y para buscar con querySelector una propiedad es con :checked
   const inputPalleteChecked = document.querySelector(
@@ -21,7 +18,12 @@ const setToLocalStorage = function() {
     palette: parseInt(inputPalleteChecked.value),
     photo: picture
   };
-  localStorage.setItem('userData', JSON.stringify(data));
+  return data;
+};
+
+const setToLocalStorage = function() {
+  const lsData = getDataObj();
+  localStorage.setItem('userData', JSON.stringify(lsData));
 };
 
 const getFromLocalStorage = function() {
