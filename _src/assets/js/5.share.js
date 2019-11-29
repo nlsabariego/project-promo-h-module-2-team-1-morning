@@ -26,21 +26,20 @@ const twitterContainer = document.querySelector('.js-share--url');
 function showUrlTwitter() {
   if (form.checkValidity() === true) {
     twitterContainer.classList.remove('js-share--url');
-    console.log('entroooo');
-    fetch('https://us-central1-awesome-cards-cf6f0.cloudfunctions.net/card', {
-      method: 'POST',
-      body: JSON.stringify(getDataObj),
-      headers: {
-        'Content-Type': 'application/json'
-      }
-    })
-      .then(res => res.json())
-      .catch(error => console.error('Error:', error))
-      .then(response => console.log('Success:', response));
+    // console.log("entroooo");
+    // fetch("https://us-central1-awesome-cards-cf6f0.cloudfunctions.net/card", {
+    //   method: "POST",
+    //   body: JSON.stringify(getDataObj),
+    //   headers: {
+    //     "Content-Type": "application/json"
+    //   }
+    // })
+    //   .catch(error => console.error("Error:", error))
+    //   .then(response => console.log("Success:", response));
   } else {
     twitterContainer.classList.add('js-share--url');
   }
 }
 
 //función listener
-shareButtonOk.addEventListener('click', doAll);
+shareButtonOk.addEventListener('click', showUrlTwitter);
