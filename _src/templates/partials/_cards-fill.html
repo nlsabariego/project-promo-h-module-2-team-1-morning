@@ -7,8 +7,9 @@
         <legend class="form-fill__title">Rellena</legend>
       </div>
       <div class="form-fill__content js-collapsable--content">
-        <!-- <div class="form-fill__group--input"> -->
-        <label class="form-fill__label" for="form-name">Nombre completo</label>
+        <label class="form-fill__label" for="form-name"
+          >Nombre completo *</label
+        >
         <input
           class="form-fill__input js-form-name"
           type="text"
@@ -20,9 +21,8 @@
           title="Introduce entre 2 y 30 letras"
           required
         />
-        <!-- </div> -->
-        <!-- <div class="form-fill__group--input"> -->
-        <label class="form-fill__label" for="form-job">Puesto</label>
+
+        <label class="form-fill__label" for="form-job">Puesto *</label>
         <input
           class="form-fill__input js-form-job"
           type="text"
@@ -52,20 +52,19 @@
           </button>
           <div class="form-fill__group-photo--preview js-preview"></div>
         </div>
-        <label class="form-fill__label" for="form-phone">Teléfono</label>
+        <label class="form-fill__label" for="form-phone">Teléfono *</label>
         <input
           class="form-fill__input js-form-tel"
           type="tel"
           id="form-phone"
           name="phone"
-          placeholder="Ej: 555-55-55-55"
+          placeholder="Ej: 666778899"
           pattern="[0-9]{9}"
           title="Número de 9 cifras"
           required
         />
-        <!-- </div>
-        <div class="form-fill__group--input"> -->
-        <label class="form-fill__label" for="form-email">Email</label>
+
+        <label class="form-fill__label" for="form-email">Email *</label>
         <input
           class="form-fill__input js-form-email"
           type="email"
@@ -74,9 +73,8 @@
           placeholder="Ej: psmanagement@gmail.com"
           required
         />
-        <!-- </div>
-        <div class="form-fill__group--input"> -->
-        <label class="form-fill__label" for="form-linkedin">Linkedin</label>
+
+        <label class="form-fill__label" for="form-linkedin">Linkedin *</label>
         <input
           class="form-fill__input js-form-linkedin"
           type="text"
@@ -85,8 +83,7 @@
           placeholder="Ej: paquitasalas"
           required
         />
-        <!-- </div>
-        <div class="form-fill__group--input"> -->
+
         <label class="form-fill__label" for="form-github">Github</label>
         <input
           class="form-fill__input js-form-github"
@@ -94,9 +91,8 @@
           id="form-github"
           name="github"
           placeholder="Ej: paquitasalas"
-          required
         />
-        <!-- </div> -->
+        <span class="legend">Los campos señalados con * son obligatorios</span>
       </div>
     </fieldset>
   </form>

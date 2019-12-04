@@ -1,7 +1,7 @@
-"use strict";
+'use strict';
 
 const collapsableTriggers = document.querySelectorAll(
-  ".js-collapsable--trigger"
+  '.js-collapsable--trigger'
 );
 
 function updateCollapsable(event) {
@@ -9,18 +9,20 @@ function updateCollapsable(event) {
 
   //Compruebo si está abierto
 
-  if (currentCollapsable.classList.contains("js-collapsable-open")) {
+  if (currentCollapsable.classList.contains('js-collapsable-open')) {
     //Si está abierto, lo puedo cerrar
-
-    currentCollapsable.classList.remove("js-collapsable-open");
+    currentCollapsable.classList.remove('js-collapsable-open');
   } else {
     //Si está cerado:
     //lo cierro todos
     for (let i = 0; i < collapsableTriggers.length; i++) {
-      collapsableTriggers[i].parentElement.classList.remove("js-collapsable-open");
+      collapsableTriggers[i].parentElement.classList.remove(
+        'js-collapsable-open'
+      );
     }
     //Abro el correcto
-    currentCollapsable.classList.add("js-collapsable-open");
+    currentCollapsable.classList.add('js-collapsable-open');
+    window.scroll(0, 100);
   }
 }
 
@@ -28,7 +30,6 @@ function updateCollapsable(event) {
 //   item.addEventListener("click", updateCollapsable);
 // }
 
-
 for (let i = 0; i < collapsableTriggers.length; i++) {
-  collapsableTriggers[i].addEventListener("click", updateCollapsable);
+  collapsableTriggers[i].addEventListener('click', updateCollapsable);
 }

@@ -11,7 +11,7 @@ function checkForm() {
     shareButton.removeAttribute('disabled');
   } else {
     shareButton.classList.add('js-button--filter');
-    shareButton.setAttribute('disabled', true);
+    // shareButton.setAttribute('disabled', true);
     twitterContainer.classList.add('js-share--url');
   }
 }
@@ -61,6 +61,7 @@ function showTwitter() {
     twitterContainer.classList.remove('js-share--url');
   } else {
     twitterContainer.classList.add('js-share--url');
+    alert('Ey! Faltan info, revisa tus datos.');
   }
   sendRequest();
 }
