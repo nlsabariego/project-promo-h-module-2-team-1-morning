@@ -48,3 +48,20 @@
     border: 2px solid $colorLightGreyBlue;
   }
 }
+
+//Palette 4
+
+.js-card-palette4 {
+  .js-card-name {
+    color: $colorPurplePaquita;
+  }
+  .js-border-info {
+    border-left: 0.5rem $colorRedPaquita solid;
+  }
+  .js-tel,
+  .js-email,
+  .js-linkedin,
+  .js-github {
+    border: 2px solid $colorPinkPaquita;
+  }
+}
