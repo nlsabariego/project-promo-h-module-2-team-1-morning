@@ -2,14 +2,14 @@
 
 const formContainer = document.querySelector('.js-form');
 
-
-
-const handleDataInput = function () {
+const handleDataInput = function() {
   console.log('aqui tecleo');
-  console.log('aqui cambio de input')
+  console.log('aqui cambio de input');
   //obtenemos solamente el input de tipo radio que está selecionado buscando por su nombre
   //y para buscar con querySelector una propiedad es con :checked
-  const inputPalleteChecked = document.querySelector('input[name="palette"]:checked');
+  const inputPalleteChecked = document.querySelector(
+    'input[name="palette"]:checked'
+  );
   const data = {
     name: inputNameElement.value,
     job: inputJobElement.value,
@@ -17,12 +17,12 @@ const handleDataInput = function () {
     github: inputGithubElement.value,
     email: inputEmailElement.value,
     tel: inputTelElement.value,
-    palette: inputPalleteChecked.value,
+    palette: inputPalleteChecked.value
   };
   localStorage.setItem('userData', JSON.stringify(data));
 };
 
-const getFromLocalStorage = function () {
+const getFromLocalStorage = function() {
   const userData = JSON.parse(localStorage.getItem('userData'));
   if (userData !== null) {
     inputNameElement.value = userData.name;
@@ -33,7 +33,9 @@ const getFromLocalStorage = function () {
     inputTelElement.value = userData.tel;
     //buscamos el radio que tiene el mismo valor que hemos guardado en la localStorage y
     //lo checkeamos (usamos checked como propiedad)
-    document.querySelector(`input[name="palette"][value="${userData.palette}"]`).checked = true;
+    document.querySelector(
+      `input[name="palette"][value="${userData.palette}"]`
+    ).checked = true;
   }
 };
 
