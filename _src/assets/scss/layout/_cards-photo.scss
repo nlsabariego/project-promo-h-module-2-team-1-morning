@@ -1,11 +1,10 @@
 .card-photo {
-  background-image: linear-gradient(#bfcdd0, #dde9ed);
+  background: url(../images/fondoRosa.png);
   width: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  // border: 3px solid red;
   padding: 3.8rem 3.5rem 4rem 4.5rem;
   @media all and (min-width: 768px) {
     padding: 17.7rem 4.4rem 26rem 4.5rem;
@@ -30,6 +29,7 @@
       display: flex;
       justify-content: space-evenly;
       cursor: pointer;
+      background: white;
     }
   }
   .icon-reset:before {
@@ -49,7 +49,6 @@
     padding-top: 2.1rem;
     background: $colorWhite;
     &__info {
-      // border: springgreen solid 1px;
       display: flex;
       flex-direction: column;
       align-items: flex-start;
@@ -83,8 +82,6 @@
     }
 
     &__links {
-      // height: 5.4rem;
-      // border: solid 2px violet;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -92,7 +89,6 @@
       &__items {
         border: 2px solid $colorGreen;
         width: 3.2rem;
-        // height: 3.2rem;
         border-radius: 1.6rem;
       }
       .icon-tel:before {
