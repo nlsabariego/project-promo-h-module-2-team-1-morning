@@ -1,5 +1,6 @@
 .card-photo {
-  background-image: linear-gradient(#bfcdd0, #dde9ed);
+  background: url(../images/fondoRosa.png);
+  //background-image: linear-gradient(#bfcdd0, #dde9ed);
   width: auto;
   display: flex;
   flex-direction: column;
@@ -30,6 +31,7 @@
       display: flex;
       justify-content: space-evenly;
       cursor: pointer;
+      background: white;
     }
   }
   .icon-reset:before {
