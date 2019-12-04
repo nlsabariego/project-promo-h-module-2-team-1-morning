@@ -55,7 +55,8 @@
 
   &--1,
   &--2,
-  &--3 {
+  &--3,
+  &--4 {
     display: flex;
     flex-direction: row;
     margin-top: 2rem;
@@ -118,9 +119,19 @@
     width: 3rem;
     background: $colorLightGreyBlue;
   }
-}
 
-// #form-palette1 {
-//   padding-top: 1rem;
-//   border: 2px solid red;
-// }
+  &__10 {
+    width: 3rem;
+    background: purple;
+  }
+
+  &__11 {
+    width: 3rem;
+    background: rgb(241, 27, 80);
+  }
+
+  &__12 {
+    width: 3rem;
+    background: rgb(250, 177, 189);
+  }
+}
