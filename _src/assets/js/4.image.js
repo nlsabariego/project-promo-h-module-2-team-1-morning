@@ -13,7 +13,6 @@ const profilePreview = document.querySelector('.js-preview'); //preview
 // Con esta función gestionamos todo lo relativo a cargar/leer la imagen
 function getImage(e) {
   // almacenamos en la constante myFile el primer archivo que cargamos desde nuestro pc
-  debugger;
   const myFile = e.currentTarget.files[0];
   // establecemos dos órdenes sobre el objeto file reader
   // 1º cuando se produzca el evento cargar en el fr, se ejecuta la función setImage (está definida y explicada más adelante)
@@ -28,7 +27,7 @@ function setImage() {
   // Una vez que cargamos la imagen con el FR, se rellena con el fr.result (que es una propiedad del objeto fr con la info de la foto que necesitamos para pintarla)
   picture = fr.result;
   // Por último, setImage también ejecuta la función previewImage, que se encarga de pintar los datos almacenados en picture (siempre y cuando no sea un string vacío) en los contenedores de la miniatura y la imagen de la card. Son background-image (no img src en el html), con lo que para verse correctamente hay que añadir bakcground-position:center, background-size: cover.
-  previewImage();
+  doAll();
 }
 function previewImage() {
   if (picture === '') {

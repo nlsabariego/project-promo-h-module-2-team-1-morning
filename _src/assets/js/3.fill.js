@@ -133,4 +133,6 @@ function doAll() {
   formIcon();
   checkForm();
   previewImage();
+  // showUrlTwitter();
+  setToLocalStorage();
 }
