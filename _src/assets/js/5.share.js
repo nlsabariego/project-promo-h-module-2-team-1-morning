@@ -22,6 +22,7 @@ function checkForm() {
 //constantes
 const shareButtonOk = document.querySelector('.js-share-button');
 const twitterContainer = document.querySelector('.js-share--url');
+let cardUrl = '';
 
 function sendRequest(getDataObj) {
   console.log('entroooo');
@@ -66,3 +67,22 @@ function showTwitter() {
 
 //función listener
 shareButtonOk.addEventListener('click', showTwitter);
+
+//botón twitter, crear tweet
+
+const buttonTwitter = document.querySelector('.js__button-Twitter');
+
+function openTwitter() {
+  const userUrl = cardUrl;
+  const twitterText = '¡Hola! Esta es mi tarjeta de contacto. Saludos!';
+  const hashtags = 'adalab,CardToGo,promoHamilton,thereisnoplanetb';
+  buttonTwitter.href =
+    'https://twitter.com/intent/tweet?url=' +
+    encodeURIComponent(userUrl) +
+    '&text=' +
+    encodeURIComponent(twitterText) +
+    '&hashtags=' +
+    encodeURIComponent(hashtags);
+}
+
+buttonTwitter.addEventListener('click', openTwitter);
