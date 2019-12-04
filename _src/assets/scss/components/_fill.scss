@@ -79,7 +79,13 @@
     }
   }
 }
-
+.legend {
+  font-family: $fontFamily;
+  color: $colorOrange;
+  font-size: 1.1rem;
+  padding-top: 1rem;
+  text-align: right;
+}
 .hidden {
   display: none;
 }

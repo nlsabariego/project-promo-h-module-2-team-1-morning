@@ -25,6 +25,7 @@ function nameData() {
 }
 
 //función handler para pintar profesión
+
 function jobData() {
   const jobValue = inputJobElement.value;
   if (jobValue) {
@@ -46,6 +47,7 @@ inputJobElement.addEventListener('keyup', doAll);
 const resetButton = document.querySelector('.js-reset-button');
 
 //función handler reset
+
 function resetButtonHandler() {
   const formDesign = document.querySelector('#js-form-design');
   formFill.reset();
@@ -55,6 +57,7 @@ function resetButtonHandler() {
 }
 
 //función listener reset
+
 resetButton.addEventListener('click', resetButtonHandler);
 
 //ICONOS

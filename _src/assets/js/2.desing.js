@@ -1,3 +1,5 @@
+// eslint-disable-next-line no-unused-vars
+
 //constantes para campos "diseña"
 
 'use strict';
@@ -9,25 +11,6 @@ const card = document.querySelector('.js-card');
 
 //funciones handler para pintar paletas
 
-// function paintPalette1() {
-//   card.classList.add('js-card-palette1');
-//   card.classList.remove('js-card-palette2');
-//   card.classList.remove('js-card-palette3');
-// }
-
-// function paintPalette2() {
-//   card.classList.add('js-card-palette2');
-//   card.classList.remove('js-card-palette1');
-//   card.classList.remove('js-card-palette3');
-// }
-
-// function paintPalette3() {
-//   card.classList.add('js-card-palette3');
-//   card.classList.remove('js-card-palette2');
-//   card.classList.remove('js-card-palette1');
-// }
-
-// eslint-disable-next-line no-unused-vars
 function paintPalette() {
   card.classList.remove('js-card-palette1');
   card.classList.remove('js-card-palette2');
