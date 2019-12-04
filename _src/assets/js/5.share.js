@@ -12,6 +12,7 @@ function checkForm() {
   } else {
     shareButton.classList.add('js-button--filter');
     shareButton.setAttribute('disabled', true);
+    twitterContainer.classList.add('js-share--url');
   }
 }
 //esta función la estamos llamando desde la DoAll, que está en el fill
@@ -22,24 +23,46 @@ function checkForm() {
 const shareButtonOk = document.querySelector('.js-share-button');
 const twitterContainer = document.querySelector('.js-share--url');
 
-//función handler
-function showUrlTwitter() {
-  if (form.checkValidity() === true) {
-    twitterContainer.classList.remove('js-share--url');
-    // console.log("entroooo");
-    // fetch("https://us-central1-awesome-cards-cf6f0.cloudfunctions.net/card", {
-    //   method: "POST",
-    //   body: JSON.stringify(getDataObj),
-    //   headers: {
-    //     "Content-Type": "application/json"
-    //   }
-    // })
-    //   .catch(error => console.error("Error:", error))
-    //   .then(response => console.log("Success:", response));
+function sendRequest(getDataObj) {
+  console.log('entroooo');
+  fetch('https://us-central1-awesome-cards-cf6f0.cloudfunctions.net/card', {
+    method: 'POST',
+    body: JSON.stringify(getDataObj),
+    headers: {
+      'Content-Type': 'application/json'
+    }
+  })
+    .then(function(resp) {
+      return resp.json();
+    })
+    .then(function(result) {
+      showURL(result);
+    })
+    .catch(function(error) {
+      console.log(error);
+    });
+}
+
+const responseURL = document.querySelector('.js-notification-link');
+
+function showURL(result) {
+  if (result.success) {
+    responseURL.innerHTML =
+      '<a href=' + result.cardURL + '>' + result.cardURL + '</a>';
   } else {
-    twitterContainer.classList.add('js-share--url');
+    responseURL.innerHTML = 'ERROR:' + result.error;
   }
 }
 
+//función handler
+function showTwitter() {
+  if (form.checkValidity() === true) {
+    twitterContainer.classList.remove('js-share--url');
+  } else {
+    twitterContainer.classList.add('js-share--url');
+  }
+  sendRequest();
+}
+
 //función listener
-shareButtonOk.addEventListener('click', showUrlTwitter);
+shareButtonOk.addEventListener('click', showTwitter);
