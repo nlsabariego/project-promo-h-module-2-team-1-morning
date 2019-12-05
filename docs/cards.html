@@ -95,6 +95,16 @@
                                         <li class="palette-color__9"></li>
                                     </ul>
                                 </div>
+                                <div class="form__palette--4">
+                                    <label class="x1" for=""></label>
+                                    <input value="4" type="radio" name="palette" id="form-palette4"
+                                    class="design__form--radio js-form-palette4" />
+                                    <ul class="palette-color">
+                                        <li class="palette-color__10"></li>
+                                        <li class="palette-color__11"></li>
+                                        <li class="palette-color__12"></li>
+                                    </ul>
+                                </div>
                             </form>
                         </div>
                     </section>
@@ -105,15 +115,12 @@
                                     <legend class="form-fill__title">Rellena</legend>
                                 </div>
                                 <div class="form-fill__content js-collapsable--content">
-                                    <!-- <div class="form-fill__group--input"> -->
-                                    <label class="form-fill__label" for="form-name">Nombre completo</label>
-                                    <input class="form-fill__input js-form-name" type="text"
-                                    id="form-name" name="name" placeholder="Ej:Paquita Salas" maxlenght="30"
+                                    <label class="form-fill__label" for="form-name">Nombre completo *</label>
+                                    <input class="form-fill__input js-form-name"
+                                    type="text" id="form-name" name="name" placeholder="Ej:Paquita Salas" maxlenght="30"
                                     pattern="[A-zA-Z ]{2,30}" title="Introduce entre 2 y 30 letras" required
                                     />
-                                    <!-- </div> -->
-                                    <!-- <div class="form-fill__group--input"> -->
-                                    <label class="form-fill__label" for="form-job">Puesto</label>
+                                    <label class="form-fill__label" for="form-job">Puesto *</label>
                                     <input class="form-fill__input js-form-job" type="text"
                                     id="form-job" name="job" placeholder="Ej:Representante de artistas" maxlenght="30"
                                     pattern="[A-zA-Z ]{2,30}" title="Introduce entre 2 y 30 letras" required
@@ -125,29 +132,22 @@
                                         <button class="form-fill__group-photo--button js-uploadBtn" title="Selecciona tu foto">Añadir imagen</button>
                                         <div class="form-fill__group-photo--preview js-preview"></div>
                                     </div>
-                                    <label class="form-fill__label" for="form-phone">Teléfono</label>
+                                    <label class="form-fill__label" for="form-phone">Teléfono *</label>
                                     <input class="form-fill__input js-form-tel" type="tel"
-                                    id="form-phone" name="phone" placeholder="Ej: 555-55-55-55" pattern="[0-9]{9}"
+                                    id="form-phone" name="phone" placeholder="Ej: 666778899" pattern="[0-9]{9}"
                                     title="Número de 9 cifras" required />
-                                    <!-- </div>
-        <div class="form-fill__group--input"> -->
-                                    <label class="form-fill__label" for="form-email">Email</label>
+                                    <label class="form-fill__label" for="form-email">Email *</label>
                                     <input class="form-fill__input js-form-email" type="email"
                                     id="form-email" name="email" placeholder="Ej: psmanagement@gmail.com" required
                                     />
-                                    <!-- </div>
-        <div class="form-fill__group--input"> -->
-                                    <label class="form-fill__label" for="form-linkedin">Linkedin</label>
+                                    <label class="form-fill__label" for="form-linkedin">Linkedin *</label>
                                     <input class="form-fill__input js-form-linkedin" type="text"
                                     id="form-linkedin" name="linkedin" placeholder="Ej: paquitasalas" required
                                     />
-                                    <!-- </div>
-        <div class="form-fill__group--input"> -->
                                     <label class="form-fill__label" for="form-github">Github</label>
                                     <input class="form-fill__input js-form-github" type="text"
-                                    id="form-github" name="github" placeholder="Ej: paquitasalas" required
-                                    />
-                                    <!-- </div> -->
+                                    id="form-github" name="github" placeholder="Ej: paquitasalas" /> <span class="legend">Los campos señalados con * son obligatorios</span>
+
                                 </div>
                             </fieldset>
                         </form>
@@ -163,8 +163,8 @@
                                 </i>Crear tarjeta</button>
                             <div class="share__notification js-share--url">
                                  <h5 class="notification__title">La tarjeta ha sido creada:</h4>
-      <a class="notification__link" href="" title="Comparte tu tarjeta con este link">www.algo.com</a>
-      <a class="notification__button-tw icon-tw" href="" title="Comparte tu tarjeta a través de twitter">Compartir en twitter</a>
+      <p class="notification__link js-notification-link"  title="Comparte tu tarjeta con este link">www.algo.com</p>
+      <a class="notification__button-tw js__button-Twitter icon-tw" href="" title="Comparte tu tarjeta a través de twitter" target="_blank">Compartir en twitter</a>
     </div>
   </div>
 
