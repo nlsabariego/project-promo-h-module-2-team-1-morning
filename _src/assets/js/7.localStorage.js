@@ -1,10 +1,10 @@
+/* eslint-disable no-undef */
+/* eslint-disable no-unused-vars */
 'use strict';
 
 const formContainer = document.querySelector('.js-form');
 
 const getDataObj = function() {
-  //obtenemos solamente el input de tipo radio que está selecionado buscando por su nombre
-  //y para buscar con querySelector una propiedad es con :checked
   const inputPalleteChecked = document.querySelector(
     'input[name="palette"]:checked'
   );
@@ -36,20 +36,11 @@ const getFromLocalStorage = function() {
     inputEmailElement.value = userData.email;
     inputTelElement.value = userData.tel;
     picture = userData.photo;
-    //buscamos el radio que tiene el mismo valor que hemos guardado en la localStorage y
-    //lo checkeamos (usamos checked como propiedad)
     document.querySelector(
       `input[name="palette"][value="${userData.palette}"]`
     ).checked = true;
   }
 };
-
-//duda Miguel?
-//entramos en el evento cuando levantamos la tecla
-// window.addEventListener('keyup', handleDataInput);
-//entramos en el evento cuando cambiamos de campo por lo que los cambios
-//solo se guardan en la caché cuando cambiamos de input
-// window.addEventListener('change', handleDataInput);
 
 getFromLocalStorage();
 doAll();

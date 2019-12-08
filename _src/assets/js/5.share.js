@@ -1,8 +1,17 @@
+/* eslint-disable no-unused-vars */
 'use strict';
+
+//constantes
+
+const shareButtonOk = document.querySelector('.js-share-button');
+const twitterContainer = document.querySelector('.js-share--url');
+let cardUrl = '';
+
 
 // CAMBIAR COLOR BOTÓN SHARE
 
 //Función para cambiar de color el botón de share
+
 const shareButton = document.querySelector('.js-share-button');
 const form = document.querySelector('.js-form');
 function checkForm() {
@@ -11,18 +20,30 @@ function checkForm() {
     shareButton.removeAttribute('disabled');
   } else {
     shareButton.classList.add('js-button--filter');
-    // shareButton.setAttribute('disabled', true);
     twitterContainer.classList.add('js-share--url');
   }
 }
-//esta función la estamos llamando desde la DoAll, que está en el fill
 
-//URL Y TWITTER
+// URL Y TWITTER
 
-//constantes
-const shareButtonOk = document.querySelector('.js-share-button');
-const twitterContainer = document.querySelector('.js-share--url');
-let cardUrl = '';
+
+//función handler para desplegar url y botón compartir en twitter
+
+function showTwitter() {
+  if (form.checkValidity() === true) {
+    twitterContainer.classList.remove('js-share--url');
+  } else {
+    twitterContainer.classList.add('js-share--url');
+    alert('Ey! Faltan info, revisa tus datos.');
+  }
+  sendRequest();
+}
+
+//función listener botón naranja
+
+shareButtonOk.addEventListener('click', showTwitter);
+
+// Crear url de la card
 
 function sendRequest(getDataObj) {
   console.log('entroooo');
@@ -55,21 +76,7 @@ function showURL(result) {
   }
 }
 
-//función handler
-function showTwitter() {
-  if (form.checkValidity() === true) {
-    twitterContainer.classList.remove('js-share--url');
-  } else {
-    twitterContainer.classList.add('js-share--url');
-    alert('Ey! Faltan info, revisa tus datos.');
-  }
-  sendRequest();
-}
-
-//función listener
-shareButtonOk.addEventListener('click', showTwitter);
-
-//botón twitter, crear tweet
+// Botón twitter, crear tweet
 
 const buttonTwitter = document.querySelector('.js__button-Twitter');
 

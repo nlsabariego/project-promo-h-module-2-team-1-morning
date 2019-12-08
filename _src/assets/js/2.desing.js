@@ -1,3 +1,5 @@
+/* eslint-disable no-undef */
+/* eslint-disable no-unused-vars */
 // eslint-disable-next-line no-unused-vars
 
 //constantes para campos "diseña"
@@ -10,7 +12,7 @@ const inputPalette3 = document.querySelector('.js-form-palette3');
 const inputPalette4 = document.querySelector('.js-form-palette4');
 const card = document.querySelector('.js-card');
 
-//funciones handler para pintar paletas
+//función handler para pintar paletas
 
 function paintPalette() {
   debugger;

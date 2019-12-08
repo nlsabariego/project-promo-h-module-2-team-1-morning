@@ -1,11 +1,13 @@
+/* eslint-disable no-unused-vars */
+/* eslint-disable no-undef */
 'use strict';
 
 const fr = new FileReader();
 
-const uploadBtn = document.querySelector('.js-uploadBtn'); //botón añadir
-const fileField = document.querySelector('.js-file-input'); // input imagen
-const profileImage = document.querySelector('.js-image-profile'); //foto perfil de la card
-const profilePreview = document.querySelector('.js-preview'); //preview
+const uploadBtn = document.querySelector('.js-uploadBtn');
+const fileField = document.querySelector('.js-file-input');
+const profileImage = document.querySelector('.js-image-profile');
+const profilePreview = document.querySelector('.js-preview');
 // const defaultImage = profileImage.style.backgroundImage =
 
 function getImage(e) {

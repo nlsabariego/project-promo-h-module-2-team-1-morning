@@ -1,12 +1,16 @@
+/* eslint-disable no-unused-vars */
+/* eslint-disable no-undef */
 'use strict';
 
-///¿PODRÍAMOS METER HREF COMO VARIABLES Y LUEGO SUMARLE EL VALOR DEL INPUT?
-//PORQUE DEL OTRO MODO LO AÑADE SI ESCRIBIMOS MÁS DE LA CUENTA
+//FUNICIÓN SUPER REPARTIDORA
 
-//const linkedin=(https//ww../)
-
-
-
-
- 
-
+function doAll() {
+  paintPalette();
+  nameData();
+  jobData();
+  formIcon();
+  checkForm();
+  previewImage();
+  // showUrlTwitter();
+  setToLocalStorage();
+}

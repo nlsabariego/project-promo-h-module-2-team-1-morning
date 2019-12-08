@@ -1,3 +1,5 @@
+/* eslint-disable no-unused-vars */
+/* eslint-disable no-undef */
 'use strict';
 
 const formFill = document.querySelector('#js-form-fill');
@@ -127,15 +129,4 @@ inputGithubElement.addEventListener('keyup', doAll);
 inputEmailElement.addEventListener('keyup', doAll);
 inputTelElement.addEventListener('keyup', doAll);
 
-//FUNICIÓN SUPER REPARTIDORA
 
-function doAll() {
-  paintPalette();
-  nameData();
-  jobData();
-  formIcon();
-  checkForm();
-  previewImage();
-  // showUrlTwitter();
-  setToLocalStorage();
-}
