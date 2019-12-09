@@ -30,12 +30,13 @@ function checkForm() {
 
 function showTwitter() {
   if (form.checkValidity() === true) {
-    twitterContainer.classList.remove("js-share--url");
+    twitterContainer.classList.remove('js-share--url');
+    sendRequest(getDataObj());
   } else {
     twitterContainer.classList.add("js-share--url");
     alert("Ey! Faltan info, revisa tus datos.");
   }
-  sendRequest(getDataObj());
+
 }
 
 //función listener botón naranja
@@ -47,19 +48,19 @@ shareButtonOk.addEventListener("click", showTwitter);
 function sendRequest(getDataObj) {
   console.log(getDataObj);
   fetch("https://us-central1-awesome-cards-cf6f0.cloudfunctions.net/card/", {
-    method: "POST",
-    body: JSON.stringify(getDataObj),
-    headers: {
-      "Content-Type": "application/json"
-    }
-  })
-    .then(function(resp) {
+      method: "POST",
+      body: JSON.stringify(getDataObj),
+      headers: {
+        "Content-Type": "application/json"
+      }
+    })
+    .then(function (resp) {
       return resp.json();
     })
-    .then(function(result) {
+    .then(function (result) {
       showURL(result);
     })
-    .catch(function(error) {
+    .catch(function (error) {
       console.log(error);
     });
 }
@@ -67,6 +68,7 @@ function sendRequest(getDataObj) {
 const responseURL = document.querySelector(".js-notification-link");
 
 function showURL(result) {
+  cardUrl = result.cardURL;
   if (result.success) {
     responseURL.innerHTML =
       "<a href=" + result.cardURL + ">" + result.cardURL + "</a>";
@@ -81,13 +83,12 @@ function showURL(result) {
 const buttonTwitter = document.querySelector(".js__button-Twitter");
 
 function openTwitter() {
-  const userUrl = cardUrl;
-  const twitterText = "¡Hola! Esta es mi tarjeta de contacto. Saludos!";
-  const hashtags = "adalab,CardToGo,promoHamilton,thereisnoplanetb";
+  const twitterText = '¡Hola! Esta es mi tarjeta de contacto. Saludos!';
+  const hashtags = 'adalab,CardToGo,promoHamilton,thereisnoplanetb';
   buttonTwitter.href =
-    "https://twitter.com/intent/tweet?url=" +
-    encodeURIComponent(userUrl) +
-    "&text=" +
+    'https://twitter.com/intent/tweet?url=' +
+    encodeURIComponent(cardUrl) +
+    '&text=' +
     encodeURIComponent(twitterText) +
     "&hashtags=" +
     encodeURIComponent(hashtags);
