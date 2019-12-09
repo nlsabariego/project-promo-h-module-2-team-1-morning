@@ -17,3 +17,28 @@
 5. Llega el momento de compartir tu tarjeta. Clicka en el botón **CREAR TARJETA** y se generará una url para que puedas compartir tu tarjeta.
 
 6. ¡Comparte tu tarjeta con el mundo a través de Twitter!
+
+## Herramientas y tecnologías utilizadas.
+
+- HTML
+- Sass
+- Java Script
+- Gulp
+- Git
+
+- La web tiene diseño responsive por lo que se adapta a diferentes dispositivos.
+
+### Versión desktop.
+
+![Maqueta Desktop](_src/assets/images/webHome.png)
+![Maqueta Desktop](_src/assets/images/webForm.png)
+
+### Versión tablet.
+
+![Maqueta móvil](_src/assets/images/tabletHome.png)
+![Maqueta móvil](_src/assets/images/tabletForm.png)
+
+### Versión móvil.
+
+![Maqueta móvil](_src/assets/images/mobileHome.png)
+![Maqueta móvil](_src/assets/images/mobileForm.png)
