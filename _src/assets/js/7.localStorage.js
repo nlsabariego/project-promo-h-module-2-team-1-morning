@@ -4,7 +4,7 @@
 
 const formContainer = document.querySelector('.js-form');
 
-const getDataObj = function() {
+const getDataObj = function () {
   const inputPalleteChecked = document.querySelector(
     'input[name="palette"]:checked'
   );
@@ -14,19 +14,19 @@ const getDataObj = function() {
     linkedin: inputLinkedinElement.value,
     github: inputGithubElement.value,
     email: inputEmailElement.value,
-    tel: inputTelElement.value,
+    phone: inputTelElement.value,
     palette: parseInt(inputPalleteChecked.value),
     photo: picture
   };
   return data;
 };
 
-const setToLocalStorage = function() {
+const setToLocalStorage = function () {
   const lsData = getDataObj();
   localStorage.setItem('userData', JSON.stringify(lsData));
 };
 
-const getFromLocalStorage = function() {
+const getFromLocalStorage = function () {
   const userData = JSON.parse(localStorage.getItem('userData'));
   if (userData !== null) {
     inputNameElement.value = userData.name;
@@ -34,7 +34,7 @@ const getFromLocalStorage = function() {
     inputLinkedinElement.value = userData.linkedin;
     inputGithubElement.value = userData.github;
     inputEmailElement.value = userData.email;
-    inputTelElement.value = userData.tel;
+    inputTelElement.value = userData.phone;
     picture = userData.photo;
     document.querySelector(
       `input[name="palette"][value="${userData.palette}"]`

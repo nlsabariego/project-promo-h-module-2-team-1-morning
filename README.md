@@ -35,8 +35,8 @@
 
 ### Versión tablet.
 
-![Maqueta móvil](_src/assets/images/tabletHome.png)
-![Maqueta móvil](_src/assets/images/tabletForm.png)
+![Maqueta tablet](_src/assets/images/tabletHome.png)
+![Maqueta tablet](_src/assets/images/tabletForm.png)
 
 ### Versión móvil.
 

@@ -15,7 +15,6 @@ const card = document.querySelector('.js-card');
 //función handler para pintar paletas
 
 function paintPalette() {
-  debugger;
   card.classList.remove('js-card-palette1');
   card.classList.remove('js-card-palette2');
   card.classList.remove('js-card-palette3');
