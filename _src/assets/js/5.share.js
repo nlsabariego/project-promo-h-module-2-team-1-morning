@@ -33,11 +33,12 @@ function checkForm() {
 function showTwitter() {
   if (form.checkValidity() === true) {
     twitterContainer.classList.remove('js-share--url');
+    sendRequest(getDataObj());
   } else {
     twitterContainer.classList.add('js-share--url');
     alert('Ey! Faltan info, revisa tus datos.');
   }
-  sendRequest(getDataObj());
+
 }
 
 //función listener botón naranja
@@ -69,6 +70,7 @@ function sendRequest(getDataObj) {
 const responseURL = document.querySelector('.js-notification-link');
 
 function showURL(result) {
+  cardUrl = result.cardURL;
   if (result.success) {
     responseURL.innerHTML =
       '<a href=' + result.cardURL + '>' + result.cardURL + '</a>';
@@ -82,12 +84,12 @@ function showURL(result) {
 const buttonTwitter = document.querySelector('.js__button-Twitter');
 
 function openTwitter() {
-  const userUrl = cardUrl;
+  debugger;
   const twitterText = '¡Hola! Esta es mi tarjeta de contacto. Saludos!';
   const hashtags = 'adalab,CardToGo,promoHamilton,thereisnoplanetb';
   buttonTwitter.href =
     'https://twitter.com/intent/tweet?url=' +
-    encodeURIComponent(userUrl) +
+    encodeURIComponent(cardUrl) +
     '&text=' +
     encodeURIComponent(twitterText) +
     '&hashtags=' +
