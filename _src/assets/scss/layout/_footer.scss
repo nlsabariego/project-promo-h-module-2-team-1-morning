@@ -9,6 +9,7 @@
   background: $colorWhite;
 
   @media all and (min-width: 768px) {
+    height: 6rem;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
