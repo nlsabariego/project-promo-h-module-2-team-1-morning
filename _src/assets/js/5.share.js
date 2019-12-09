@@ -14,6 +14,7 @@ let cardUrl = '';
 
 const shareButton = document.querySelector('.js-share-button');
 const form = document.querySelector('.js-form');
+
 function checkForm() {
   if (form.checkValidity() === true) {
     shareButton.classList.remove('js-button--filter');
@@ -36,7 +37,7 @@ function showTwitter() {
     twitterContainer.classList.add('js-share--url');
     alert('Ey! Faltan info, revisa tus datos.');
   }
-  sendRequest();
+  sendRequest(getDataObj());
 }
 
 //función listener botón naranja
@@ -46,21 +47,21 @@ shareButtonOk.addEventListener('click', showTwitter);
 // Crear url de la card
 
 function sendRequest(getDataObj) {
-  console.log('entroooo');
-  fetch('https://us-central1-awesome-cards-cf6f0.cloudfunctions.net/card', {
-    method: 'POST',
-    body: JSON.stringify(getDataObj),
-    headers: {
-      'Content-Type': 'application/json'
-    }
-  })
-    .then(function(resp) {
+  console.log(getDataObj);
+  fetch('https://us-central1-awesome-cards-cf6f0.cloudfunctions.net/card/', {
+      method: 'POST',
+      body: JSON.stringify(getDataObj),
+      headers: {
+        'Content-Type': 'application/json'
+      }
+    })
+    .then(function (resp) {
       return resp.json();
     })
-    .then(function(result) {
+    .then(function (result) {
       showURL(result);
     })
-    .catch(function(error) {
+    .catch(function (error) {
       console.log(error);
     });
 }
